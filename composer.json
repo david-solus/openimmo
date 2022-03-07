@@ -1,0 +1,18 @@
+{
+    "name": "david-solus/reo-openimmo",
+    "description": "Reordered properties",
+    "license": "GPL-3.0",
+    "autoload": {
+        "psr-4": {
+            "DavidSolus\\ReoOpenimmo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Marquardt",
+            "email": "kontakt@solus-it-solutions.de",
+            "homepage": "www.solus-it-solutions.de"
+        }
+    ],
+    "require": {}
+}
