@@ -5,6 +5,7 @@ namespace REO\OpenImmo\API;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlAttribute;
 use JMS\Serializer\Annotation\XmlRoot;
+use JMS\Serializer\Annotation\XmlValue;
 
 /**
  * Class Uebertragung
