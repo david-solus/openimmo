@@ -10,8 +10,7 @@
     "authors": [
         {
             "name": "David Marquardt",
-            "email": "kontakt@solus-it-solutions.de",
-            "homepage": "www.solus-it-solutions.de"
+            "email": "kontakt@solus-it-solutions.de"
         }
     ],
     "require": {}
