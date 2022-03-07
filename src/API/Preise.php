@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\API;
+namespace REO\OpenImmo\API;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
@@ -14,13 +14,13 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Preise
 {
     /**
-     * @Type("Ujamii\OpenImmo\API\Kaufpreis")
+     * @Type("REO\OpenImmo\API\Kaufpreis")
      * @var Kaufpreis
      */
     protected $kaufpreis;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Kaufpreisnetto")
+     * @Type("REO\OpenImmo\API\Kaufpreisnetto")
      * @var Kaufpreisnetto
      */
     protected $kaufpreisnetto;
@@ -80,7 +80,7 @@ class Preise
     protected $mietzuschlaege;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Hauptmietzinsnetto")
+     * @Type("REO\OpenImmo\API\Hauptmietzinsnetto")
      * @var Hauptmietzinsnetto
      */
     protected $hauptmietzinsnetto;
@@ -92,19 +92,19 @@ class Preise
     protected $pauschalmiete;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Betriebskostennetto")
+     * @Type("REO\OpenImmo\API\Betriebskostennetto")
      * @var Betriebskostennetto
      */
     protected $betriebskostennetto;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Evbnetto")
+     * @Type("REO\OpenImmo\API\Evbnetto")
      * @var Evbnetto
      */
     protected $evbnetto;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Gesamtmietenetto")
+     * @Type("REO\OpenImmo\API\Gesamtmietenetto")
      * @var Gesamtmietenetto
      */
     protected $gesamtmietenetto;
@@ -116,7 +116,7 @@ class Preise
     protected $gesamtmietebrutto;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Gesamtbelastungnetto")
+     * @Type("REO\OpenImmo\API\Gesamtbelastungnetto")
      * @var Gesamtbelastungnetto
      */
     protected $gesamtbelastungnetto;
@@ -128,19 +128,19 @@ class Preise
     protected $gesamtbelastungbrutto;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Gesamtkostenprom2von")
+     * @Type("REO\OpenImmo\API\Gesamtkostenprom2von")
      * @var Gesamtkostenprom2von
      */
     protected $gesamtkostenprom2von;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Heizkostennetto")
+     * @Type("REO\OpenImmo\API\Heizkostennetto")
      * @var Heizkostennetto
      */
     protected $heizkostennetto;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Monatlichekostennetto")
+     * @Type("REO\OpenImmo\API\Monatlichekostennetto")
      * @var Monatlichekostennetto
      */
     protected $monatlichekostennetto;
@@ -152,37 +152,37 @@ class Preise
     protected $monatlichekostenbrutto;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Nebenkostenprom2von")
+     * @Type("REO\OpenImmo\API\Nebenkostenprom2von")
      * @var Nebenkostenprom2von
      */
     protected $nebenkostenprom2von;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Ruecklagenetto")
+     * @Type("REO\OpenImmo\API\Ruecklagenetto")
      * @var Ruecklagenetto
      */
     protected $ruecklagenetto;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Sonstigekostennetto")
+     * @Type("REO\OpenImmo\API\Sonstigekostennetto")
      * @var Sonstigekostennetto
      */
     protected $sonstigekostennetto;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Sonstigemietenetto")
+     * @Type("REO\OpenImmo\API\Sonstigemietenetto")
      * @var Sonstigemietenetto
      */
     protected $sonstigemietenetto;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Summemietenetto")
+     * @Type("REO\OpenImmo\API\Summemietenetto")
      * @var Summemietenetto
      */
     protected $summemietenetto;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Nettomieteprom2von")
+     * @Type("REO\OpenImmo\API\Nettomieteprom2von")
      * @var Nettomieteprom2von
      */
     protected $nettomieteprom2von;
@@ -224,7 +224,7 @@ class Preise
     protected $preisZeitraumBis;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\PreisZeiteinheit")
+     * @Type("REO\OpenImmo\API\PreisZeiteinheit")
      * @var PreisZeiteinheit
      */
     protected $preisZeiteinheit;
@@ -248,19 +248,19 @@ class Preise
     protected $provisionspflichtig;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\ProvisionTeilen")
+     * @Type("REO\OpenImmo\API\ProvisionTeilen")
      * @var ProvisionTeilen
      */
     protected $provisionTeilen;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\InnenCourtage")
+     * @Type("REO\OpenImmo\API\InnenCourtage")
      * @var InnenCourtage
      */
     protected $innenCourtage;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\AussenCourtage")
+     * @Type("REO\OpenImmo\API\AussenCourtage")
      * @var AussenCourtage
      */
     protected $aussenCourtage;
@@ -272,7 +272,7 @@ class Preise
     protected $courtageHinweis;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Provisionnetto")
+     * @Type("REO\OpenImmo\API\Provisionnetto")
      * @var Provisionnetto
      */
     protected $provisionnetto;
@@ -284,7 +284,7 @@ class Preise
     protected $provisionbrutto;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Waehrung")
+     * @Type("REO\OpenImmo\API\Waehrung")
      * @var Waehrung
      */
     protected $waehrung;
@@ -332,13 +332,13 @@ class Preise
     protected $nettorenditeIst;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\MieteinnahmenIst")
+     * @Type("REO\OpenImmo\API\MieteinnahmenIst")
      * @var MieteinnahmenIst
      */
     protected $mieteinnahmenIst;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\MieteinnahmenSoll")
+     * @Type("REO\OpenImmo\API\MieteinnahmenSoll")
      * @var MieteinnahmenSoll
      */
     protected $mieteinnahmenSoll;
@@ -368,44 +368,44 @@ class Preise
     protected $geschaeftsguthaben;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\StpCarport")
+     * @Type("REO\OpenImmo\API\StpCarport")
      * @var StpCarport
      */
     protected $stpCarport;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\StpDuplex")
+     * @Type("REO\OpenImmo\API\StpDuplex")
      * @var StpDuplex
      */
     protected $stpDuplex;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\StpFreiplatz")
+     * @Type("REO\OpenImmo\API\StpFreiplatz")
      * @var StpFreiplatz
      */
     protected $stpFreiplatz;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\StpGarage")
+     * @Type("REO\OpenImmo\API\StpGarage")
      * @var StpGarage
      */
     protected $stpGarage;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\StpParkhaus")
+     * @Type("REO\OpenImmo\API\StpParkhaus")
      * @var StpParkhaus
      */
     protected $stpParkhaus;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\StpTiefgarage")
+     * @Type("REO\OpenImmo\API\StpTiefgarage")
      * @var StpTiefgarage
      */
     protected $stpTiefgarage;
 
     /**
      * @XmlList(inline = true, entry = "stp_sonstige")
-     * @Type("array<Ujamii\OpenImmo\API\StpSonstige>")
+     * @Type("array<REO\OpenImmo\API\StpSonstige>")
      * @var StpSonstige[]
      */
     protected $stpSonstige;
@@ -424,21 +424,21 @@ class Preise
 
     /**
      * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedSimplefield>")
      * @var UserDefinedSimplefield[]
      */
     protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedAnyfield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedAnyfield>")
      * @var UserDefinedAnyfield[]
      */
     protected $userDefinedAnyfield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_extend")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedExtend>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedExtend>")
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;

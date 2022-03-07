@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\API;
+namespace REO\OpenImmo\API;
 
 use JMS\Serializer\Annotation\SkipWhenEmpty;
 use JMS\Serializer\Annotation\Type;
@@ -32,7 +32,7 @@ class Foto
     protected $format = '';
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Daten")
+     * @Type("REO\OpenImmo\API\Daten")
      * @var Daten
      */
     protected $daten;

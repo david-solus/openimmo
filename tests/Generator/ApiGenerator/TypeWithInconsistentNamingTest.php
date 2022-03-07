@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\Tests\Generator\ApiGenerator;
+namespace REO\OpenImmo\Tests\Generator\ApiGenerator;
 
 class TypeWithInconsistentNamingTest extends FileGeneratingTest
 {

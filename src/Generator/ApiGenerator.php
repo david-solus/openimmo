@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\Generator;
+namespace REO\OpenImmo\Generator;
 
 use GoetasWebservices\XML\XSDReader\Schema\Attribute\Attribute;
 use GoetasWebservices\XML\XSDReader\Schema\Element\ElementItem;
@@ -18,7 +18,7 @@ use gossi\codegen\model\PhpMethod;
 use gossi\codegen\model\PhpParameter;
 use gossi\codegen\model\PhpProperty;
 use gossi\docblock\tags\TagFactory;
-use Ujamii\OpenImmo\XSDReader\Schema\Type\ComplexTypeMixed;
+use REO\OpenImmo\XSDReader\Schema\Type\ComplexTypeMixed;
 
 /**
  * Class ApiGenerator
@@ -93,7 +93,7 @@ class ApiGenerator
 
         $class = new PhpClass();
         $class
-            ->setQualifiedName('Ujamii\\OpenImmo\\API\\' . $className)
+            ->setQualifiedName('REO\\OpenImmo\\API\\' . $className)
             ->setUseStatements([
                 'XmlRoot' => 'JMS\Serializer\Annotation\XmlRoot',
                 'Type'    => 'JMS\Serializer\Annotation\Type'
@@ -110,7 +110,7 @@ class ApiGenerator
         if ($element->getType() instanceof ComplexTypeSimpleContent) {
             $this->addSimpleValue($element->getType()->getExtension(), $class);
         } elseif ($element->getType() instanceof ComplexTypeMixed) {
-            // @see https://github.com/ujamii/openimmo/issues/3
+            // @see https://github.com/REO/openimmo/issues/3
             $this->addSimpleValue(null, $class);
         } else {
             /* @var ComplexType $complexType */
@@ -218,7 +218,7 @@ class ApiGenerator
 
         $nullable = $property->getMin() === 0;
         // if the property type is an object, it should be nullable
-        if (strpos($serializerType, 'Ujamii\\OpenImmo\\API\\') === 0 || '\DateTime' === $phpType) {
+        if (strpos($serializerType, 'REO\\OpenImmo\\API\\') === 0 || '\DateTime' === $phpType) {
             $nullable = true;
         }
         if (!$nullable) {

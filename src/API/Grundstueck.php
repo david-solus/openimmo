@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\API;
+namespace REO\OpenImmo\API;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlAttribute;

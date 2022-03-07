@@ -1,9 +1,9 @@
 <?php
 
-namespace Ujamii\OpenImmo\Tests\Generator;
+namespace REO\OpenImmo\Tests\Generator;
 
 use PHPUnit\Framework\TestCase;
-use Ujamii\OpenImmo\Generator\TypeUtil;
+use REO\OpenImmo\Generator\TypeUtil;
 
 class TypeUtilTest extends TestCase
 {
@@ -66,8 +66,8 @@ class TypeUtilTest extends TestCase
             ['boolean[]', 'array<bool>'],
             ['decimal[]', 'array<float>'],
 
-            ['FooBarClassName', 'Ujamii\\OpenImmo\\API\\FooBarClassName'],
-            ['FooBarClassName[]', 'array<Ujamii\\OpenImmo\\API\\FooBarClassName>'],
+            ['FooBarClassName', 'REO\\OpenImmo\\API\\FooBarClassName'],
+            ['FooBarClassName[]', 'array<REO\\OpenImmo\\API\\FooBarClassName>'],
         ];
     }
 }

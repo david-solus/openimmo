@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ujamii\OpenImmo\Tests\API;
+namespace REO\OpenImmo\Tests\API;
 
 use gossi\codegen\model\PhpClass;
 use PHPUnit\Framework\TestCase;
@@ -37,7 +37,7 @@ class ApiClassTest extends TestCase
      */
     protected function automateTestClassProperties(string $className, string $propertyName, string $type)
     {
-        $typeWithNs = "Ujamii\\OpenImmo\\API\\{$className}";
+        $typeWithNs = "REO\\OpenImmo\\API\\{$className}";
         $subject = new $typeWithNs();
         $testValue = $this->getExampleData($type);
         $return = $subject->{'set' . ucfirst($propertyName)}($testValue);
@@ -76,7 +76,7 @@ class ApiClassTest extends TestCase
                 break;
 
             default:
-                $typeWithNs = "Ujamii\\OpenImmo\\API\\{$singular}";
+                $typeWithNs = "REO\\OpenImmo\\API\\{$singular}";
                 $value = new $typeWithNs();
         }
 

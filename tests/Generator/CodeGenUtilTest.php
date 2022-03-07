@@ -1,10 +1,10 @@
 <?php
 
-namespace Ujamii\OpenImmo\Tests\Generator;
+namespace REO\OpenImmo\Tests\Generator;
 
 use gossi\codegen\model\PhpProperty;
 use PHPUnit\Framework\TestCase;
-use Ujamii\OpenImmo\Generator\CodeGenUtil;
+use REO\OpenImmo\Generator\CodeGenUtil;
 
 class CodeGenUtilTest extends TestCase
 {

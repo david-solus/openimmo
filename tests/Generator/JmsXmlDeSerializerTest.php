@@ -1,22 +1,22 @@
 <?php
 
-namespace Ujamii\OpenImmo\Tests\Generator;
+namespace REO\OpenImmo\Tests\Generator;
 
 use Doctrine\Common\Annotations\AnnotationRegistry;
 use JMS\Serializer\Handler\HandlerRegistryInterface;
 use JMS\Serializer\SerializerInterface;
 use PHPUnit\Framework\TestCase;
-use Ujamii\OpenImmo\API\Anhang;
-use Ujamii\OpenImmo\API\AussenCourtage;
-use Ujamii\OpenImmo\API\Bewertung;
-use Ujamii\OpenImmo\API\EmailSonstige;
-use Ujamii\OpenImmo\API\Foto;
-use Ujamii\OpenImmo\API\Objektkategorie;
-use Ujamii\OpenImmo\API\Openimmo;
-use Ujamii\OpenImmo\API\Uebertragung;
-use Ujamii\OpenImmo\API\Wohnung;
-use Ujamii\OpenImmo\API\Zimmer;
-use Ujamii\OpenImmo\Handler\DateTimeHandler;
+use REO\OpenImmo\API\Anhang;
+use REO\OpenImmo\API\AussenCourtage;
+use REO\OpenImmo\API\Bewertung;
+use REO\OpenImmo\API\EmailSonstige;
+use REO\OpenImmo\API\Foto;
+use REO\OpenImmo\API\Objektkategorie;
+use REO\OpenImmo\API\Openimmo;
+use REO\OpenImmo\API\Uebertragung;
+use REO\OpenImmo\API\Wohnung;
+use REO\OpenImmo\API\Zimmer;
+use REO\OpenImmo\Handler\DateTimeHandler;
 
 class JmsXmlDeSerializerTest extends TestCase
 {

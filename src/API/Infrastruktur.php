@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\API;
+namespace REO\OpenImmo\API;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
@@ -20,42 +20,42 @@ class Infrastruktur
     protected $zulieferung;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Ausblick")
+     * @Type("REO\OpenImmo\API\Ausblick")
      * @var Ausblick
      */
     protected $ausblick;
 
     /**
      * @XmlList(inline = true, entry = "distanzen")
-     * @Type("array<Ujamii\OpenImmo\API\Distanzen>")
+     * @Type("array<REO\OpenImmo\API\Distanzen>")
      * @var Distanzen[]
      */
     protected $distanzen;
 
     /**
      * @XmlList(inline = true, entry = "distanzen_sport")
-     * @Type("array<Ujamii\OpenImmo\API\DistanzenSport>")
+     * @Type("array<REO\OpenImmo\API\DistanzenSport>")
      * @var DistanzenSport[]
      */
     protected $distanzenSport;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedSimplefield>")
      * @var UserDefinedSimplefield[]
      */
     protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedAnyfield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedAnyfield>")
      * @var UserDefinedAnyfield[]
      */
     protected $userDefinedAnyfield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_extend")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedExtend>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedExtend>")
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;

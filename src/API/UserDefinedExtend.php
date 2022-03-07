@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\API;
+namespace REO\OpenImmo\API;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
@@ -15,7 +15,7 @@ class UserDefinedExtend
 {
     /**
      * @XmlList(inline = true, entry = "feld")
-     * @Type("array<Ujamii\OpenImmo\API\Feld>")
+     * @Type("array<REO\OpenImmo\API\Feld>")
      * @var Feld[]
      */
     protected $feld;

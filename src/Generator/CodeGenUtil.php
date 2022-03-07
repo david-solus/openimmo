@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\Generator;
+namespace REO\OpenImmo\Generator;
 
 use gossi\codegen\model\PhpClass;
 use gossi\codegen\model\PhpMethod;

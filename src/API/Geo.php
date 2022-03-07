@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\API;
+namespace REO\OpenImmo\API;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
@@ -26,7 +26,7 @@ class Geo
     protected $ort;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Geokoordinaten")
+     * @Type("REO\OpenImmo\API\Geokoordinaten")
      * @var Geokoordinaten
      */
     protected $geokoordinaten;
@@ -50,7 +50,7 @@ class Geo
     protected $bundesland;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Land")
+     * @Type("REO\OpenImmo\API\Land")
      * @var Land
      */
     protected $land;
@@ -92,7 +92,7 @@ class Geo
     protected $anzahlEtagen;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\LageImBau")
+     * @Type("REO\OpenImmo\API\LageImBau")
      * @var LageImBau
      */
     protected $lageImBau;
@@ -104,7 +104,7 @@ class Geo
     protected $wohnungsnr;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\LageGebiet")
+     * @Type("REO\OpenImmo\API\LageGebiet")
      * @var LageGebiet
      */
     protected $lageGebiet;
@@ -141,21 +141,21 @@ class Geo
 
     /**
      * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedSimplefield>")
      * @var UserDefinedSimplefield[]
      */
     protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedAnyfield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedAnyfield>")
      * @var UserDefinedAnyfield[]
      */
     protected $userDefinedAnyfield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_extend")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedExtend>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedExtend>")
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;

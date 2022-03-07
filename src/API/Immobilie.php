@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\API;
+namespace REO\OpenImmo\API;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
@@ -16,119 +16,119 @@ class Immobilie
 {
     
     /**
-     * @Type("Ujamii\OpenImmo\API\Objektkategorie")
+     * @Type("REO\OpenImmo\API\Objektkategorie")
      * @var Objektkategorie
      */
     protected $objektkategorie;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Geo")
+     * @Type("REO\OpenImmo\API\Geo")
      * @var Geo
      */
     protected $geo;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Kontaktperson")
+     * @Type("REO\OpenImmo\API\Kontaktperson")
      * @var Kontaktperson
      */
     protected $kontaktperson;
 
     /**
      * @XmlList(inline = true, entry = "weitere_adresse")
-     * @Type("array<Ujamii\OpenImmo\API\WeitereAdresse>")
+     * @Type("array<REO\OpenImmo\API\WeitereAdresse>")
      * @var WeitereAdresse[]
      */
     protected $weitereAdresse;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Preise")
+     * @Type("REO\OpenImmo\API\Preise")
      * @var Preise
      */
     protected $preise;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Bieterverfahren")
+     * @Type("REO\OpenImmo\API\Bieterverfahren")
      * @var Bieterverfahren
      */
     protected $bieterverfahren;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Versteigerung")
+     * @Type("REO\OpenImmo\API\Versteigerung")
      * @var Versteigerung
      */
     protected $versteigerung;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Flaechen")
+     * @Type("REO\OpenImmo\API\Flaechen")
      * @var Flaechen
      */
     protected $flaechen;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Ausstattung")
+     * @Type("REO\OpenImmo\API\Ausstattung")
      * @var Ausstattung
      */
     protected $ausstattung;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\ZustandAngaben")
+     * @Type("REO\OpenImmo\API\ZustandAngaben")
      * @var ZustandAngaben
      */
     protected $zustandAngaben;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Bewertung")
+     * @Type("REO\OpenImmo\API\Bewertung")
      * @var Bewertung
      */
     protected $bewertung;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Infrastruktur")
+     * @Type("REO\OpenImmo\API\Infrastruktur")
      * @var Infrastruktur
      */
     protected $infrastruktur;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Freitexte")
+     * @Type("REO\OpenImmo\API\Freitexte")
      * @var Freitexte
      */
     protected $freitexte;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Anhaenge")
+     * @Type("REO\OpenImmo\API\Anhaenge")
      * @var Anhaenge
      */
     protected $anhaenge;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\VerwaltungObjekt")
+     * @Type("REO\OpenImmo\API\VerwaltungObjekt")
      * @var VerwaltungObjekt
      */
     protected $verwaltungObjekt;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\VerwaltungTechn")
+     * @Type("REO\OpenImmo\API\VerwaltungTechn")
      * @var VerwaltungTechn
      */
     protected $verwaltungTechn;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedSimplefield>")
      * @var UserDefinedSimplefield[]
      */
     protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedAnyfield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedAnyfield>")
      * @var UserDefinedAnyfield[]
      */
     protected $userDefinedAnyfield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_extend")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedExtend>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedExtend>")
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;

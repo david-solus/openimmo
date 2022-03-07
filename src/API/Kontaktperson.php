@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\API;
+namespace REO\OpenImmo\API;
 
 use JMS\Serializer\Annotation\SkipWhenEmpty;
 use JMS\Serializer\Annotation\Type;
@@ -142,7 +142,7 @@ class Kontaktperson
     protected $postfOrt;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Land")
+     * @Type("REO\OpenImmo\API\Land")
      * @var Land
      */
     protected $land;
@@ -155,7 +155,7 @@ class Kontaktperson
 
     /**
      * @XmlList(inline = true, entry = "email_sonstige")
-     * @Type("array<Ujamii\OpenImmo\API\EmailSonstige>")
+     * @Type("array<REO\OpenImmo\API\EmailSonstige>")
      * @var EmailSonstige[]
      */
     protected $emailSonstige;
@@ -174,7 +174,7 @@ class Kontaktperson
 
     /**
      * @XmlList(inline = true, entry = "tel_sonstige")
-     * @Type("array<Ujamii\OpenImmo\API\TelSonstige>")
+     * @Type("array<REO\OpenImmo\API\TelSonstige>")
      * @var TelSonstige[]
      */
     protected $telSonstige;
@@ -204,7 +204,7 @@ class Kontaktperson
     protected $immobilientreuhaenderid;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Foto")
+     * @Type("REO\OpenImmo\API\Foto")
      * @var Foto
      */
     protected $foto;
@@ -223,21 +223,21 @@ class Kontaktperson
 
     /**
      * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedSimplefield>")
      * @var UserDefinedSimplefield[]
      */
     protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedAnyfield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedAnyfield>")
      * @var UserDefinedAnyfield[]
      */
     protected $userDefinedAnyfield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_extend")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedExtend>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedExtend>")
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;

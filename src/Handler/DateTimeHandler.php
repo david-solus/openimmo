@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\Handler;
+namespace REO\OpenImmo\Handler;
 
 use JMS\Serializer\GraphNavigatorInterface;
 use JMS\Serializer\Handler\SubscribingHandlerInterface;

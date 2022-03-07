@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\Tests\Generator;
+namespace REO\OpenImmo\Tests\Generator;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
@@ -9,26 +9,26 @@ use Symfony\Component\Serializer\Normalizer\DateTimeNormalizer;
 use Symfony\Component\Serializer\Normalizer\GetSetMethodNormalizer;
 use Symfony\Component\Serializer\Serializer;
 use Symfony\Component\Serializer\SerializerInterface;
-use Ujamii\OpenImmo\API\Aktion;
-use Ujamii\OpenImmo\API\Anbieter;
-use Ujamii\OpenImmo\API\Ausblick;
-use Ujamii\OpenImmo\API\AussenCourtage;
-use Ujamii\OpenImmo\API\Bewertung;
-use Ujamii\OpenImmo\API\Distanzen;
-use Ujamii\OpenImmo\API\DistanzenSport;
-use Ujamii\OpenImmo\API\Feld;
-use Ujamii\OpenImmo\API\Geo;
-use Ujamii\OpenImmo\API\Immobilie;
-use Ujamii\OpenImmo\API\Infrastruktur;
-use Ujamii\OpenImmo\API\Kontaktperson;
-use Ujamii\OpenImmo\API\Nutzungsart;
-use Ujamii\OpenImmo\API\Objektart;
-use Ujamii\OpenImmo\API\Objektkategorie;
-use Ujamii\OpenImmo\API\Openimmo;
-use Ujamii\OpenImmo\API\Uebertragung;
-use Ujamii\OpenImmo\API\Vermarktungsart;
-use Ujamii\OpenImmo\API\VerwaltungTechn;
-use Ujamii\OpenImmo\API\Wohnung;
+use REO\OpenImmo\API\Aktion;
+use REO\OpenImmo\API\Anbieter;
+use REO\OpenImmo\API\Ausblick;
+use REO\OpenImmo\API\AussenCourtage;
+use REO\OpenImmo\API\Bewertung;
+use REO\OpenImmo\API\Distanzen;
+use REO\OpenImmo\API\DistanzenSport;
+use REO\OpenImmo\API\Feld;
+use REO\OpenImmo\API\Geo;
+use REO\OpenImmo\API\Immobilie;
+use REO\OpenImmo\API\Infrastruktur;
+use REO\OpenImmo\API\Kontaktperson;
+use REO\OpenImmo\API\Nutzungsart;
+use REO\OpenImmo\API\Objektart;
+use REO\OpenImmo\API\Objektkategorie;
+use REO\OpenImmo\API\Openimmo;
+use REO\OpenImmo\API\Uebertragung;
+use REO\OpenImmo\API\Vermarktungsart;
+use REO\OpenImmo\API\VerwaltungTechn;
+use REO\OpenImmo\API\Wohnung;
 
 class SymfonyJsonSerializerTest extends TestCase
 {

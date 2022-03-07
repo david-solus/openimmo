@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\API;
+namespace REO\OpenImmo\API;
 
 use JMS\Serializer\Annotation\SkipWhenEmpty;
 use JMS\Serializer\Annotation\Type;
@@ -17,14 +17,14 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Openimmo
 {
     /**
-     * @Type("Ujamii\OpenImmo\API\Uebertragung")
+     * @Type("REO\OpenImmo\API\Uebertragung")
      * @var Uebertragung
      */
     protected $uebertragung;
     
     /**
      * @XmlList(inline = true, entry = "anbieter")
-     * @Type("array<Ujamii\OpenImmo\API\Anbieter>")
+     * @Type("array<REO\OpenImmo\API\Anbieter>")
      * @SkipWhenEmpty
      * @var Anbieter[]
      */
@@ -32,14 +32,14 @@ class Openimmo
 
     /**
      * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedSimplefield>")
      * @var UserDefinedSimplefield[]
      */
     protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedAnyfield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedAnyfield>")
      * @var UserDefinedAnyfield[]
      */
     protected $userDefinedAnyfield;

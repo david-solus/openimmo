@@ -1,12 +1,12 @@
 <?php
 
-namespace Ujamii\OpenImmo\Tests\Generator\ApiGenerator;
+namespace REO\OpenImmo\Tests\Generator\ApiGenerator;
 
 use gossi\codegen\model\PhpClass;
 use gossi\docblock\tags\AbstractTag;
 use PHPUnit\Framework\TestCase;
-use Ujamii\OpenImmo\Generator\ApiGenerator;
-use Ujamii\OpenImmo\Generator\TypeUtil;
+use REO\OpenImmo\Generator\ApiGenerator;
+use REO\OpenImmo\Generator\TypeUtil;
 
 abstract class FileGeneratingTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\API;
+namespace REO\OpenImmo\API;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
@@ -26,31 +26,31 @@ class ZustandAngaben
     protected $letztemodernisierung;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Zustand")
+     * @Type("REO\OpenImmo\API\Zustand")
      * @var Zustand
      */
     protected $zustand;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Alter")
+     * @Type("REO\OpenImmo\API\Alter")
      * @var Alter
      */
     protected $alter;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\BebaubarNach")
+     * @Type("REO\OpenImmo\API\BebaubarNach")
      * @var BebaubarNach
      */
     protected $bebaubarNach;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Erschliessung")
+     * @Type("REO\OpenImmo\API\Erschliessung")
      * @var Erschliessung
      */
     protected $erschliessung;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\ErschliessungUmfang")
+     * @Type("REO\OpenImmo\API\ErschliessungUmfang")
      * @var ErschliessungUmfang
      */
     protected $erschliessungUmfang;
@@ -69,34 +69,34 @@ class ZustandAngaben
 
     /**
      * @XmlList(inline = true, entry = "energiepass")
-     * @Type("array<Ujamii\OpenImmo\API\Energiepass>")
+     * @Type("array<REO\OpenImmo\API\Energiepass>")
      * @var Energiepass[]
      */
     protected $energiepass;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Verkaufstatus")
+     * @Type("REO\OpenImmo\API\Verkaufstatus")
      * @var Verkaufstatus
      */
     protected $verkaufstatus;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedSimplefield>")
      * @var UserDefinedSimplefield[]
      */
     protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedAnyfield>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedAnyfield>")
      * @var UserDefinedAnyfield[]
      */
     protected $userDefinedAnyfield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_extend")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedExtend>")
+     * @Type("array<REO\OpenImmo\API\UserDefinedExtend>")
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;

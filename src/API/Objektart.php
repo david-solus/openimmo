@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\API;
+namespace REO\OpenImmo\API;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
@@ -17,91 +17,91 @@ class Objektart
 
     /**
      * @XmlList(inline = true, entry = "zimmer")
-     * @Type("array<Ujamii\OpenImmo\API\Zimmer>")
+     * @Type("array<REO\OpenImmo\API\Zimmer>")
      * @var Zimmer[]
      */
     protected $zimmer;
 
     /**
      * @XmlList(inline = true, entry = "wohnung")
-     * @Type("array<Ujamii\OpenImmo\API\Wohnung>")
+     * @Type("array<REO\OpenImmo\API\Wohnung>")
      * @var Wohnung[]
      */
     protected $wohnung;
 
     /**
      * @XmlList(inline = true, entry = "haus")
-     * @Type("array<Ujamii\OpenImmo\API\Haus>")
+     * @Type("array<REO\OpenImmo\API\Haus>")
      * @var Haus[]
      */
     protected $haus;
 
     /**
      * @XmlList(inline = true, entry = "grundstueck")
-     * @Type("array<Ujamii\OpenImmo\API\Grundstueck>")
+     * @Type("array<REO\OpenImmo\API\Grundstueck>")
      * @var Grundstueck[]
      */
     protected $grundstueck;
 
     /**
      * @XmlList(inline = true, entry = "buero_praxen")
-     * @Type("array<Ujamii\OpenImmo\API\BueroPraxen>")
+     * @Type("array<REO\OpenImmo\API\BueroPraxen>")
      * @var BueroPraxen[]
      */
     protected $bueroPraxen;
 
     /**
      * @XmlList(inline = true, entry = "einzelhandel")
-     * @Type("array<Ujamii\OpenImmo\API\Einzelhandel>")
+     * @Type("array<REO\OpenImmo\API\Einzelhandel>")
      * @var Einzelhandel[]
      */
     protected $einzelhandel;
 
     /**
      * @XmlList(inline = true, entry = "gastgewerbe")
-     * @Type("array<Ujamii\OpenImmo\API\Gastgewerbe>")
+     * @Type("array<REO\OpenImmo\API\Gastgewerbe>")
      * @var Gastgewerbe[]
      */
     protected $gastgewerbe;
 
     /**
      * @XmlList(inline = true, entry = "hallen_lager_prod")
-     * @Type("array<Ujamii\OpenImmo\API\HallenLagerProd>")
+     * @Type("array<REO\OpenImmo\API\HallenLagerProd>")
      * @var HallenLagerProd[]
      */
     protected $hallenLagerProd;
 
     /**
      * @XmlList(inline = true, entry = "land_und_forstwirtschaft")
-     * @Type("array<Ujamii\OpenImmo\API\LandUndForstwirtschaft>")
+     * @Type("array<REO\OpenImmo\API\LandUndForstwirtschaft>")
      * @var LandUndForstwirtschaft[]
      */
     protected $landUndForstwirtschaft;
 
     /**
      * @XmlList(inline = true, entry = "parken")
-     * @Type("array<Ujamii\OpenImmo\API\Parken>")
+     * @Type("array<REO\OpenImmo\API\Parken>")
      * @var Parken[]
      */
     protected $parken;
 
     /**
      * @XmlList(inline = true, entry = "sonstige")
-     * @Type("array<Ujamii\OpenImmo\API\Sonstige>")
+     * @Type("array<REO\OpenImmo\API\Sonstige>")
      * @var Sonstige[]
      */
     protected $sonstige;
 
     /**
      * @XmlList(inline = true, entry = "freizeitimmobilie_gewerblich")
-     * @Type("array<Ujamii\OpenImmo\API\FreizeitimmobilieGewerblich>")
+     * @Type("array<REO\OpenImmo\API\FreizeitimmobilieGewerblich>")
      * @var FreizeitimmobilieGewerblich[]
      */
     protected $freizeitimmobilieGewerblich;
 
     /**
      * @XmlList(inline = true, entry = "zinshaus_renditeobjekt")
-     * @Type("array<Ujamii\OpenImmo\API\ZinshausRenditeobjekt>")
+     * @Type("array<REO\OpenImmo\API\ZinshausRenditeobjekt>")
      * @var ZinshausRenditeobjekt[]
      */
     protected $zinshausRenditeobjekt;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ujamii\OpenImmo\Generator;
+namespace REO\OpenImmo\Generator;
 
 use GoetasWebservices\XML\XSDReader\Schema\Type\ComplexType;
 use GoetasWebservices\XML\XSDReader\Schema\Type\ComplexTypeSimpleContent;
@@ -54,7 +54,7 @@ class TypeUtil
                 break;
 
             default:
-                $ns   = 'Ujamii\\OpenImmo\\API\\';
+                $ns   = 'REO\\OpenImmo\\API\\';
                 $type = $ns . $singular;
                 break;
 
