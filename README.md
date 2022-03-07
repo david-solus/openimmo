@@ -2,9 +2,6 @@
 
 [![Packagist](https://img.shields.io/packagist/v/ujamii/openimmo.svg?colorB=green&style=flat)](https://packagist.org/packages/ujamii/openimmo)
 [![Minimum PHP Version](https://img.shields.io/badge/php-7.3%2B-8892BF.svg?style=flat)](https://php.net/)
-[![Continuous Integration](https://github.com/ujamii/openimmo/actions/workflows/php.yml/badge.svg)](https://github.com/ujamii/openimmo/actions)
-[![codecov](https://codecov.io/gh/ujamii/openimmo/branch/master/graph/badge.svg?token=97D799UX1B)](https://codecov.io/gh/ujamii/openimmo)
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fujamii%2Fopenimmo%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/ujamii/openimmo/master)
 
 OpenImmo and the OpenImmo logo are registered trademarks of the [OpenImmo e.V.](http://www.openimmo.de)
 Neither is this package an official distribution nor am I associated with this organisation!
@@ -16,26 +13,12 @@ To completely convince you, you will only be allowed to see the code **after** y
 
 **Important note**
 
+
+This lib is a fork of umajiis project. The properties where reordered in this one.
+
 I am not allowed to include real world xml examples into this distribution package due to license restrictions. Thus, some tests are automatically
 skipped, if the xml files are not found in the examples directory!
 Do not be fooled by "Open" in OpenImmo ;-)
-
-## TODOs
-
-- add test cases, especially for the example file provided with the official download package.
-
-## Installation
-
-```shell
-composer req ujamii/openimmo
-```
-
-## Integrations
-
-If you like to use this API as base for an integration into a CMS or Framework, feel free to contact me, I will link it here.
-
-- Integration into TYPO3 CMS, [extension "openimmo"](https://github.com/ujamii/openimmo-typo3)
-- NEOS CMS, [package "Ujamii.OpenImmoNeos"](https://github.com/ujamii/openimmo-neos)
 
 ## Usage
 
