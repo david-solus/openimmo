@@ -14,6 +14,35 @@ use JMS\Serializer\Annotation\XmlRoot;
  */
 class Objektart
 {
+
+    /**
+     * @XmlList(inline = true, entry = "zimmer")
+     * @Type("array<Ujamii\OpenImmo\API\Zimmer>")
+     * @var Zimmer[]
+     */
+    protected $zimmer;
+
+    /**
+     * @XmlList(inline = true, entry = "wohnung")
+     * @Type("array<Ujamii\OpenImmo\API\Wohnung>")
+     * @var Wohnung[]
+     */
+    protected $wohnung;
+
+    /**
+     * @XmlList(inline = true, entry = "haus")
+     * @Type("array<Ujamii\OpenImmo\API\Haus>")
+     * @var Haus[]
+     */
+    protected $haus;
+
+    /**
+     * @XmlList(inline = true, entry = "grundstueck")
+     * @Type("array<Ujamii\OpenImmo\API\Grundstueck>")
+     * @var Grundstueck[]
+     */
+    protected $grundstueck;
+
     /**
      * @XmlList(inline = true, entry = "buero_praxen")
      * @Type("array<Ujamii\OpenImmo\API\BueroPraxen>")
@@ -29,25 +58,11 @@ class Objektart
     protected $einzelhandel;
 
     /**
-     * @XmlList(inline = true, entry = "freizeitimmobilie_gewerblich")
-     * @Type("array<Ujamii\OpenImmo\API\FreizeitimmobilieGewerblich>")
-     * @var FreizeitimmobilieGewerblich[]
-     */
-    protected $freizeitimmobilieGewerblich;
-
-    /**
      * @XmlList(inline = true, entry = "gastgewerbe")
      * @Type("array<Ujamii\OpenImmo\API\Gastgewerbe>")
      * @var Gastgewerbe[]
      */
     protected $gastgewerbe;
-
-    /**
-     * @XmlList(inline = true, entry = "grundstueck")
-     * @Type("array<Ujamii\OpenImmo\API\Grundstueck>")
-     * @var Grundstueck[]
-     */
-    protected $grundstueck;
 
     /**
      * @XmlList(inline = true, entry = "hallen_lager_prod")
@@ -57,25 +72,11 @@ class Objektart
     protected $hallenLagerProd;
 
     /**
-     * @XmlList(inline = true, entry = "haus")
-     * @Type("array<Ujamii\OpenImmo\API\Haus>")
-     * @var Haus[]
-     */
-    protected $haus;
-
-    /**
      * @XmlList(inline = true, entry = "land_und_forstwirtschaft")
      * @Type("array<Ujamii\OpenImmo\API\LandUndForstwirtschaft>")
      * @var LandUndForstwirtschaft[]
      */
     protected $landUndForstwirtschaft;
-
-    /**
-     * @XmlList(inline = true, entry = "objektart_zusatz")
-     * @Type("array<string>")
-     * @var string[]
-     */
-    protected $objektartZusatz;
 
     /**
      * @XmlList(inline = true, entry = "parken")
@@ -92,18 +93,11 @@ class Objektart
     protected $sonstige;
 
     /**
-     * @XmlList(inline = true, entry = "wohnung")
-     * @Type("array<Ujamii\OpenImmo\API\Wohnung>")
-     * @var Wohnung[]
+     * @XmlList(inline = true, entry = "freizeitimmobilie_gewerblich")
+     * @Type("array<Ujamii\OpenImmo\API\FreizeitimmobilieGewerblich>")
+     * @var FreizeitimmobilieGewerblich[]
      */
-    protected $wohnung;
-
-    /**
-     * @XmlList(inline = true, entry = "zimmer")
-     * @Type("array<Ujamii\OpenImmo\API\Zimmer>")
-     * @var Zimmer[]
-     */
-    protected $zimmer;
+    protected $freizeitimmobilieGewerblich;
 
     /**
      * @XmlList(inline = true, entry = "zinshaus_renditeobjekt")
@@ -111,6 +105,14 @@ class Objektart
      * @var ZinshausRenditeobjekt[]
      */
     protected $zinshausRenditeobjekt;
+
+    /**
+     * @XmlList(inline = true, entry = "objektart_zusatz")
+     * @Type("array<string>")
+     * @var string[]
+     */
+    protected $objektartZusatz;
+
 
     /**
      * Returns array of BueroPraxen

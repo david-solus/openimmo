@@ -15,19 +15,22 @@ use JMS\Serializer\Annotation\XmlRoot;
 class WeitereAdresse
 {
     /**
-     * required
-     *
      * @Type("string")
-     * @XmlAttribute
      * @var string
      */
-    protected $adressart;
+    protected $vorname;
 
     /**
-     * @Type("bool")
-     * @var bool
+     * @Type("string")
+     * @var string
      */
-    protected $adressfreigabe;
+    protected $name;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $titel;
 
     /**
      * @Type("string")
@@ -40,6 +43,72 @@ class WeitereAdresse
      * @var string
      */
     protected $anredeBrief;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $firma;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $zusatzfeld;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $strasse;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $hausnummer;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $plz;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $ort;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $postfach;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $postfPlz;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $postfOrt;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Land")
+     * @var Land
+     */
+    protected $land;
+
+    /**
+     * @Type("string")
+     * @var string Minimum length: 1
+     */
+    protected $emailZentrale;
 
     /**
      * @Type("string")
@@ -64,97 +133,25 @@ class WeitereAdresse
      * @Type("string")
      * @var string Minimum length: 1
      */
-    protected $emailZentrale;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $firma;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $freitextfeld;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $hausnummer;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Land")
-     * @var Land
-     */
-    protected $land;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $name;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $ort;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $personennummer;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $plz;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $postfach;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $postfOrt;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $postfPlz;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $strasse;
-
-    /**
-     * @Type("string")
-     * @var string Minimum length: 1
-     */
     protected $telDurchw;
 
     /**
      * @Type("string")
      * @var string Minimum length: 1
      */
-    protected $telFax;
+    protected $telZentrale;
 
     /**
      * @Type("string")
      * @var string Minimum length: 1
      */
     protected $telHandy;
+
+    /**
+     * @Type("string")
+     * @var string Minimum length: 1
+     */
+    protected $telFax;
 
     /**
      * @Type("string")
@@ -171,21 +168,34 @@ class WeitereAdresse
 
     /**
      * @Type("string")
-     * @var string Minimum length: 1
-     */
-    protected $telZentrale;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $titel;
-
-    /**
-     * @Type("string")
      * @var string
      */
     protected $url;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $adressfreigabe;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $personennummer;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $freitextfeld;
+
+    /**
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
+     */
+    protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
@@ -202,23 +212,13 @@ class WeitereAdresse
     protected $userDefinedExtend;
 
     /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
-     */
-    protected $userDefinedSimplefield;
-
-    /**
+     * required
+     *
      * @Type("string")
+     * @XmlAttribute
      * @var string
      */
-    protected $vorname;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $zusatzfeld;
+    protected $adressart;
 
     /**
      * @return string

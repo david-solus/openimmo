@@ -19,16 +19,6 @@ class Dachform
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("FLACHDACH")
-     * @var bool
-     */
-    protected $flachdach;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
      * @SerializedName("KRUEPPELWALMDACH")
      * @var bool
      */
@@ -59,16 +49,6 @@ class Dachform
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("PYRAMIDENDACH")
-     * @var bool
-     */
-    protected $pyramidendach;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
      * @SerializedName("SATTELDACH")
      * @var bool
      */
@@ -83,6 +63,26 @@ class Dachform
      * @var bool
      */
     protected $walmdach;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("FLACHDACH")
+     * @var bool
+     */
+    protected $flachdach;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("PYRAMIDENDACH")
+     * @var bool
+     */
+    protected $pyramidendach;
 
     /**
      * @return bool

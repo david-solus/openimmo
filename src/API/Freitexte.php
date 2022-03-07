@@ -17,7 +17,7 @@ class Freitexte
      * @Type("string")
      * @var string
      */
-    protected $ausstattBeschr;
+    protected $objekttitel;
 
     /**
      * @Type("string")
@@ -35,7 +35,19 @@ class Freitexte
      * @Type("string")
      * @var string
      */
+    protected $ausstattBeschr;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
     protected $objektbeschreibung;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $sonstigeAngaben;
 
     /**
      * @Type("Ujamii\OpenImmo\API\ObjektText")
@@ -44,16 +56,11 @@ class Freitexte
     protected $objektText;
 
     /**
-     * @Type("string")
-     * @var string
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
      */
-    protected $objekttitel;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $sonstigeAngaben;
+    protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
@@ -68,13 +75,6 @@ class Freitexte
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;
-
-    /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
-     */
-    protected $userDefinedSimplefield;
 
     /**
      * @return string

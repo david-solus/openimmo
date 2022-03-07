@@ -15,6 +15,16 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Zustand
 {
     /**
+     * optional
+     *
+     * @Type("string")
+     * @XmlAttribute
+     * @see ZUSTAND_ART_* constants
+     * @var string
+     */
+    protected $zustandArt;
+
+    /**
      */
     public const ZUSTAND_ART_ABRISSOBJEKT = 'ABRISSOBJEKT';
 
@@ -77,16 +87,6 @@ class Zustand
     /**
      */
     public const ZUSTAND_ART_VOLL_SANIERT = 'VOLL_SANIERT';
-
-    /**
-     * optional
-     *
-     * @Type("string")
-     * @XmlAttribute
-     * @see ZUSTAND_ART_* constants
-     * @var string
-     */
-    protected $zustandArt;
 
     /**
      * @param string $zustandArt Shortcut setter for zustandArt

@@ -14,12 +14,14 @@ use JMS\Serializer\Annotation\XmlRoot;
 class StpSonstige
 {
     /**
+     * optional
+     *
+     * @Type("string")
+     * @XmlAttribute
+     * @see PLATZART_* constants
+     * @var string
      */
-    public const PLATZART_CARPORT = 'CARPORT';
-
-    /**
-     */
-    public const PLATZART_DUPLEX = 'DUPLEX';
+    protected $platzart;
 
     /**
      */
@@ -31,15 +33,23 @@ class StpSonstige
 
     /**
      */
+    public const PLATZART_TIEFGARAGE = 'TIEFGARAGE';
+
+    /**
+     */
+    public const PLATZART_CARPORT = 'CARPORT';
+
+    /**
+     */
+    public const PLATZART_DUPLEX = 'DUPLEX';
+
+    /**
+     */
     public const PLATZART_PARKHAUS = 'PARKHAUS';
 
     /**
      */
     public const PLATZART_SONSTIGES = 'SONSTIGES';
-
-    /**
-     */
-    public const PLATZART_TIEFGARAGE = 'TIEFGARAGE';
 
     /**
      * optional
@@ -49,16 +59,6 @@ class StpSonstige
      * @var string
      */
     protected $bemerkung;
-
-    /**
-     * optional
-     *
-     * @Type("string")
-     * @XmlAttribute
-     * @see PLATZART_* constants
-     * @var string
-     */
-    protected $platzart;
 
     /**
      * @param string $platzart Shortcut setter for platzart

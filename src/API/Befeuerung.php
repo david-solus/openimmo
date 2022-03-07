@@ -20,60 +20,10 @@ class Befeuerung
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("ALTERNATIV")
+     * @SerializedName("OEL")
      * @var bool
      */
-    protected $alternativ;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("BLOCK")
-     * @var bool
-     */
-    protected $block;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("ELEKTRO")
-     * @var bool
-     */
-    protected $elektro;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("ERDWAERME")
-     * @var bool
-     */
-    protected $erdwaerme;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("FERN")
-     * @var bool
-     */
-    protected $fern;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("FLUESSIGGAS")
-     * @var bool
-     */
-    protected $fluessiggas;
+    protected $oel;
 
     /**
      * optional
@@ -90,50 +40,20 @@ class Befeuerung
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("HOLZ")
+     * @SerializedName("ELEKTRO")
      * @var bool
      */
-    protected $holz;
+    protected $elektro;
 
     /**
      * optional
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("KOHLE")
+     * @SerializedName("ALTERNATIV")
      * @var bool
      */
-    protected $kohle;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("LUFTWP")
-     * @var bool
-     */
-    protected $luftwp;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("OEL")
-     * @var bool
-     */
-    protected $oel;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("PELLET")
-     * @var bool
-     */
-    protected $pellet;
+    protected $alternativ;
 
     /**
      * optional
@@ -150,10 +70,90 @@ class Befeuerung
      *
      * @Type("bool")
      * @XmlAttribute
+     * @SerializedName("ERDWAERME")
+     * @var bool
+     */
+    protected $erdwaerme;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("LUFTWP")
+     * @var bool
+     */
+    protected $luftwp;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("FERN")
+     * @var bool
+     */
+    protected $fern;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("BLOCK")
+     * @var bool
+     */
+    protected $block;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
      * @SerializedName("WASSER-ELEKTRO")
      * @var bool
      */
     protected $wasserElektro;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("PELLET")
+     * @var bool
+     */
+    protected $pellet;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("KOHLE")
+     * @var bool
+     */
+    protected $kohle;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("HOLZ")
+     * @var bool
+     */
+    protected $holz;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("FLUESSIGGAS")
+     * @var bool
+     */
+    protected $fluessiggas;
 
     /**
      * @return bool

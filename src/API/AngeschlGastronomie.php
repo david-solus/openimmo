@@ -20,20 +20,20 @@ class AngeschlGastronomie
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("BAR")
+     * @SerializedName("HOTELRESTAURANT")
      * @var bool
      */
-    protected $bar;
+    protected $hotelrestaurant;
 
     /**
      * optional
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("HOTELRESTAURANT")
+     * @SerializedName("BAR")
      * @var bool
      */
-    protected $hotelrestaurant;
+    protected $bar;
 
     /**
      * @param bool $hotelrestaurant Shortcut setter for hotelrestaurant

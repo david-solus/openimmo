@@ -16,6 +16,23 @@ use JMS\Serializer\Annotation\XmlRoot;
 class ProvisionTeilen
 {
     /**
+     * optional
+     *
+     * @Type("string")
+     * @XmlAttribute
+     * @see WERT_* constants
+     * @var string
+     */
+    protected $wert;
+
+    /**
+     * @Inline
+     * @Type("string")
+     * @var string
+     */
+    protected $value;
+
+    /**
      */
     public const WERT_ABSOLUT = 'absolut';
 
@@ -26,23 +43,6 @@ class ProvisionTeilen
     /**
      */
     public const WERT_TEXT = 'text';
-
-    /**
-     * @Inline
-     * @Type("string")
-     * @var string
-     */
-    protected $value;
-
-    /**
-     * optional
-     *
-     * @Type("string")
-     * @XmlAttribute
-     * @see WERT_* constants
-     * @var string
-     */
-    protected $wert;
 
     /**
      * @param string $wert Shortcut setter for wert

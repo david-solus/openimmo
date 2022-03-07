@@ -15,40 +15,10 @@ use JMS\Serializer\Annotation\XmlRoot;
 class VerwaltungTechn
 {
     /**
-     * @Type("Ujamii\OpenImmo\API\Aktion")
-     * @var Aktion
-     */
-    protected $aktion;
-
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     * @var \DateTime
-     */
-    protected $aktivBis;
-
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     * @var \DateTime
-     */
-    protected $aktivVon;
-
-    /**
      * @Type("string")
      * @var string
      */
-    protected $gruppenKennung;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $kennungUrsprung;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Master")
-     * @var Master
-     */
-    protected $master;
+    protected $objektnrIntern;
 
     /**
      * @Type("string")
@@ -58,10 +28,22 @@ class VerwaltungTechn
     protected $objektnrExtern = '';
 
     /**
-     * @Type("string")
-     * @var string
+     * @Type("Ujamii\OpenImmo\API\Aktion")
+     * @var Aktion
      */
-    protected $objektnrIntern;
+    protected $aktion;
+
+    /**
+     * @Type("DateTime<'Y-m-d'>")
+     * @var \DateTime
+     */
+    protected $aktivVon;
+
+    /**
+     * @Type("DateTime<'Y-m-d'>")
+     * @var \DateTime
+     */
+    protected $aktivBis;
 
     /**
      * @Type("string")
@@ -74,13 +56,56 @@ class VerwaltungTechn
      * @Type("string")
      * @var string
      */
-    protected $sprache;
+    protected $kennungUrsprung;
 
     /**
      * @Type("DateTime<'Y-m-d'>")
      * @var \DateTime
      */
     protected $standVom;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $weitergabeGenerell;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $weitergabePositiv;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $weitergabeNegativ;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $gruppenKennung;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Master")
+     * @var Master
+     */
+    protected $master;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $sprache;
+
+    /**
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
+     */
+    protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
@@ -95,31 +120,6 @@ class VerwaltungTechn
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;
-
-    /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
-     */
-    protected $userDefinedSimplefield;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $weitergabeGenerell;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $weitergabeNegativ;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $weitergabePositiv;
 
     /**
      * @return Aktion

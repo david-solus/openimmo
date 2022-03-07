@@ -14,10 +14,34 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Geo
 {
     /**
-     * @Type("int")
-     * @var int Minimum value (inclusive): -2147483648, Maximum value (inclusive): 2147483647
+     * @Type("string")
+     * @var string
      */
-    protected $anzahlEtagen;
+    protected $plz;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $ort;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Geokoordinaten")
+     * @var Geokoordinaten
+     */
+    protected $geokoordinaten;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $strasse;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $hausnummer;
 
     /**
      * @Type("string")
@@ -26,10 +50,16 @@ class Geo
     protected $bundesland;
 
     /**
-     * @Type("int")
-     * @var int Minimum value (inclusive): -2147483648, Maximum value (inclusive): 2147483647
+     * @Type("Ujamii\OpenImmo\API\Land")
+     * @var Land
      */
-    protected $etage;
+    protected $land;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $gemeindecode;
 
     /**
      * @Type("string")
@@ -50,22 +80,40 @@ class Geo
     protected $gemarkung;
 
     /**
+     * @Type("int")
+     * @var int Minimum value (inclusive): -2147483648, Maximum value (inclusive): 2147483647
+     */
+    protected $etage;
+
+    /**
+     * @Type("int")
+     * @var int Minimum value (inclusive): -2147483648, Maximum value (inclusive): 2147483647
+     */
+    protected $anzahlEtagen;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\LageImBau")
+     * @var LageImBau
+     */
+    protected $lageImBau;
+
+    /**
      * @Type("string")
      * @var string
      */
-    protected $gemeindecode;
+    protected $wohnungsnr;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Geokoordinaten")
-     * @var Geokoordinaten
+     * @Type("Ujamii\OpenImmo\API\LageGebiet")
+     * @var LageGebiet
      */
-    protected $geokoordinaten;
+    protected $lageGebiet;
 
     /**
      * @Type("string")
      * @var string
      */
-    protected $hausnummer;
+    protected $regionalerZusatz;
 
     /**
      * @Type("bool")
@@ -80,22 +128,10 @@ class Geo
     protected $kartenMikro;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\LageGebiet")
-     * @var LageGebiet
+     * @Type("bool")
+     * @var bool
      */
-    protected $lageGebiet;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\LageImBau")
-     * @var LageImBau
-     */
-    protected $lageImBau;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Land")
-     * @var Land
-     */
-    protected $land;
+    protected $virtuelletour;
 
     /**
      * @Type("bool")
@@ -104,28 +140,11 @@ class Geo
     protected $luftbildern;
 
     /**
-     * @Type("string")
-     * @var string
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
      */
-    protected $ort;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $plz;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $regionalerZusatz;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $strasse;
+    protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
@@ -140,25 +159,6 @@ class Geo
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;
-
-    /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
-     */
-    protected $userDefinedSimplefield;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $virtuelletour;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $wohnungsnr;
 
     /**
      * @return int

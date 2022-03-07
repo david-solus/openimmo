@@ -20,110 +20,10 @@ class Boden
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("DIELEN")
-     * @var bool
-     */
-    protected $dielen;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("DOPPELBODEN")
-     * @var bool
-     */
-    protected $doppelboden;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("ESTRICH")
-     * @var bool
-     */
-    protected $estrich;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("FERTIGPARKETT")
-     * @var bool
-     */
-    protected $fertigparkett;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
      * @SerializedName("FLIESEN")
      * @var bool
      */
     protected $fliesen;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("GRANIT")
-     * @var bool
-     */
-    protected $granit;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("KUNSTSTOFF")
-     * @var bool
-     */
-    protected $kunststoff;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("LAMINAT")
-     * @var bool
-     */
-    protected $laminat;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("LINOLEUM")
-     * @var bool
-     */
-    protected $linoleum;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("MARMOR")
-     * @var bool
-     */
-    protected $marmor;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("PARKETT")
-     * @var bool
-     */
-    protected $parkett;
 
     /**
      * optional
@@ -150,10 +50,110 @@ class Boden
      *
      * @Type("bool")
      * @XmlAttribute
+     * @SerializedName("PARKETT")
+     * @var bool
+     */
+    protected $parkett;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("FERTIGPARKETT")
+     * @var bool
+     */
+    protected $fertigparkett;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("LAMINAT")
+     * @var bool
+     */
+    protected $laminat;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("DIELEN")
+     * @var bool
+     */
+    protected $dielen;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("KUNSTSTOFF")
+     * @var bool
+     */
+    protected $kunststoff;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("ESTRICH")
+     * @var bool
+     */
+    protected $estrich;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("DOPPELBODEN")
+     * @var bool
+     */
+    protected $doppelboden;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("LINOLEUM")
+     * @var bool
+     */
+    protected $linoleum;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("MARMOR")
+     * @var bool
+     */
+    protected $marmor;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
      * @SerializedName("TERRAKOTTA")
      * @var bool
      */
     protected $terrakotta;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("GRANIT")
+     * @var bool
+     */
+    protected $granit;
 
     /**
      * @return bool

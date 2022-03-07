@@ -40,20 +40,20 @@ class Serviceleistungen
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("EINKAUF")
+     * @SerializedName("REINIGUNG")
      * @var bool
      */
-    protected $einkauf;
+    protected $reinigung;
 
     /**
      * optional
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("REINIGUNG")
+     * @SerializedName("EINKAUF")
      * @var bool
      */
-    protected $reinigung;
+    protected $einkauf;
 
     /**
      * optional

@@ -15,12 +15,14 @@ use JMS\Serializer\Annotation\XmlRoot;
 class PreisZeiteinheit
 {
     /**
+     * optional
+     *
+     * @Type("string")
+     * @XmlAttribute
+     * @see ZEITEINHEIT_* constants
+     * @var string
      */
-    public const ZEITEINHEIT_JAHR = 'JAHR';
-
-    /**
-     */
-    public const ZEITEINHEIT_MONAT = 'MONAT';
+    protected $zeiteinheit;
 
     /**
      */
@@ -31,14 +33,12 @@ class PreisZeiteinheit
     public const ZEITEINHEIT_WOCHE = 'WOCHE';
 
     /**
-     * optional
-     *
-     * @Type("string")
-     * @XmlAttribute
-     * @see ZEITEINHEIT_* constants
-     * @var string
      */
-    protected $zeiteinheit;
+    public const ZEITEINHEIT_MONAT = 'MONAT';
+
+    /**
+     */
+    public const ZEITEINHEIT_JAHR = 'JAHR';
 
     /**
      * @param string $zeiteinheit Shortcut setter for zeiteinheit

@@ -15,18 +15,18 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Feld
 {
     /**
-     * @XmlList(inline = true, entry = "modus")
-     * @Type("array<string>")
-     * @var string[]
+     * @Type("string")
+     * @SkipWhenEmpty
+     * @var string
      */
-    protected $modus;
+    protected $name = '';
 
     /**
      * @Type("string")
      * @SkipWhenEmpty
      * @var string
      */
-    protected $name = '';
+    protected $wert = '';
 
     /**
      * @XmlList(inline = true, entry = "typ")
@@ -36,11 +36,11 @@ class Feld
     protected $typ;
 
     /**
-     * @Type("string")
-     * @SkipWhenEmpty
-     * @var string
+     * @XmlList(inline = true, entry = "modus")
+     * @Type("array<string>")
+     * @var string[]
      */
-    protected $wert = '';
+    protected $modus;
 
     /**
      * @param string $name Shortcut setter for name

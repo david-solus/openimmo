@@ -16,16 +16,6 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Vermarktungsart
 {
     /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("ERBPACHT")
-     * @var bool
-     */
-    protected $erbpacht;
-
-    /**
      * required
      *
      * @Type("bool")
@@ -36,16 +26,6 @@ class Vermarktungsart
     protected $kauf;
 
     /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("LEASING")
-     * @var bool
-     */
-    protected $leasing;
-
-    /**
      * required
      *
      * @Type("bool")
@@ -54,6 +34,26 @@ class Vermarktungsart
      * @var bool
      */
     protected $mietePacht;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("ERBPACHT")
+     * @var bool
+     */
+    protected $erbpacht;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("LEASING")
+     * @var bool
+     */
+    protected $leasing;
 
     /**
      * @param bool $kauf Shortcut setter for kauf

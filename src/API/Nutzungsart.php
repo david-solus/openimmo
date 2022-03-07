@@ -16,15 +16,15 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Nutzungsart
 {
     /**
-     * optional
+     * required
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("ANLAGE")
+     * @SerializedName("WOHNEN")
      * @var bool
      */
-    protected $anlage;
-
+    protected $wohnen;
+    
     /**
      * required
      *
@@ -40,20 +40,21 @@ class Nutzungsart
      *
      * @Type("bool")
      * @XmlAttribute
+     * @SerializedName("ANLAGE")
+     * @var bool
+     */
+    protected $anlage;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
      * @SerializedName("WAZ")
      * @var bool
      */
     protected $waz;
 
-    /**
-     * required
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("WOHNEN")
-     * @var bool
-     */
-    protected $wohnen;
 
     /**
      * @param bool $wohnen Shortcut setter for wohnen

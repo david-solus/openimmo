@@ -20,10 +20,30 @@ class Heizungsart
      *
      * @Type("bool")
      * @XmlAttribute
+     * @SerializedName("OFEN")
+     * @var bool
+     */
+    protected $ofen;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
      * @SerializedName("ETAGE")
      * @var bool
      */
     protected $etage;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("ZENTRAL")
+     * @var bool
+     */
+    protected $zentral;
 
     /**
      * optional
@@ -44,26 +64,6 @@ class Heizungsart
      * @var bool
      */
     protected $fussboden;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("OFEN")
-     * @var bool
-     */
-    protected $ofen;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("ZENTRAL")
-     * @var bool
-     */
-    protected $zentral;
 
     /**
      * @param bool $ofen Shortcut setter for ofen

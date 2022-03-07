@@ -14,121 +14,10 @@ use JMS\Serializer\Annotation\XmlRoot;
 class VerwaltungObjekt
 {
     /**
-     * @Type("DateTime<'Y-m-d'>")
-     * @var \DateTime
-     */
-    protected $abdatum;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $alsFerien;
-
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     * @var \DateTime
-     */
-    protected $bisdatum;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $branchen;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $denkmalgeschuetzt;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Geschlecht")
-     * @var Geschlecht
-     */
-    protected $geschlecht;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $gewerblicheNutzung;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $gruppennummer;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $haustiere;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $hochhaus;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $laufzeit;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\MaxMietdauer")
-     * @var MaxMietdauer
-     */
-    protected $maxMietdauer;
-
-    /**
-     * @Type("int")
-     * @var int Minimum value (inclusive): 1
-     */
-    protected $maxPersonen;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\MinMietdauer")
-     * @var MinMietdauer
-     */
-    protected $minMietdauer;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $nichtraucher;
-
-    /**
      * @Type("bool")
      * @var bool
      */
     protected $objektadresseFreigeben;
-
-    /**
-     * @XmlList(inline = true, entry = "user_defined_anyfield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedAnyfield>")
-     * @var UserDefinedAnyfield[]
-     */
-    protected $userDefinedAnyfield;
-
-    /**
-     * @XmlList(inline = true, entry = "user_defined_extend")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedExtend>")
-     * @var UserDefinedExtend[]
-     */
-    protected $userDefinedExtend;
-
-    /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
-     */
-    protected $userDefinedSimplefield;
 
     /**
      * @Type("string")
@@ -137,10 +26,28 @@ class VerwaltungObjekt
     protected $verfuegbarAb;
 
     /**
-     * @Type("bool")
-     * @var bool
+     * @Type("DateTime<'Y-m-d'>")
+     * @var \DateTime
      */
-    protected $vermietet;
+    protected $abdatum;
+
+    /**
+     * @Type("DateTime<'Y-m-d'>")
+     * @var \DateTime
+     */
+    protected $bisdatum;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\MinMietdauer")
+     * @var MinMietdauer
+     */
+    protected $minMietdauer;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\MaxMietdauer")
+     * @var MaxMietdauer
+     */
+    protected $maxMietdauer;
 
     /**
      * @Type("DateTime<'Y-m-d'>")
@@ -155,10 +62,103 @@ class VerwaltungObjekt
     protected $wbsSozialwohnung;
 
     /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $vermietet;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $gruppennummer;
+
+    /**
      * @Type("string")
      * @var string
      */
     protected $zugang;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $laufzeit;
+
+    /**
+     * @Type("int")
+     * @var int Minimum value (inclusive): 1
+     */
+    protected $maxPersonen;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $nichtraucher;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $haustiere;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Geschlecht")
+     * @var Geschlecht
+     */
+    protected $geschlecht;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $denkmalgeschuetzt;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $alsFerien;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $gewerblicheNutzung;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $branchen;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $hochhaus;
+
+    /**
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
+     */
+    protected $userDefinedSimplefield;
+
+    /**
+     * @XmlList(inline = true, entry = "user_defined_anyfield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedAnyfield>")
+     * @var UserDefinedAnyfield[]
+     */
+    protected $userDefinedAnyfield;
+
+    /**
+     * @XmlList(inline = true, entry = "user_defined_extend")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedExtend>")
+     * @var UserDefinedExtend[]
+     */
+    protected $userDefinedExtend;
 
     /**
      * @return \DateTime

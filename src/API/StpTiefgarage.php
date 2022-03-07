@@ -16,11 +16,11 @@ class StpTiefgarage
     /**
      * optional
      *
-     * @Type("int")
+     * @Type("float")
      * @XmlAttribute
-     * @var int Minimum value (inclusive): -2147483648, Maximum value (inclusive): 2147483647
+     * @var float
      */
-    protected $anzahl;
+    protected $stellplatzmiete;
 
     /**
      * optional
@@ -34,11 +34,11 @@ class StpTiefgarage
     /**
      * optional
      *
-     * @Type("float")
+     * @Type("int")
      * @XmlAttribute
-     * @var float
+     * @var int Minimum value (inclusive): -2147483648, Maximum value (inclusive): 2147483647
      */
-    protected $stellplatzmiete;
+    protected $anzahl;
 
     /**
      * @param float $stellplatzmiete Shortcut setter for stellplatzmiete

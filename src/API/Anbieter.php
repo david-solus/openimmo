@@ -22,17 +22,30 @@ class Anbieter
     protected $anbieternr;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Anhang")
-     * @var Anhang
+     * @Type("string")
+     * @SkipWhenEmpty
+     * @var string
      */
-    protected $anhang;
+    protected $firma = '';
 
     /**
      * @Type("string")
      * @SkipWhenEmpty
      * @var string
      */
-    protected $firma = '';
+    protected $openimmoAnid = '';
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $lizenzkennung;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Anhang")
+     * @var Anhang
+     */
+    protected $anhang;
 
     /**
      * @XmlList(inline = true, entry = "immobilie")
@@ -54,17 +67,11 @@ class Anbieter
     protected $impressumStrukt;
 
     /**
-     * @Type("string")
-     * @var string
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
      */
-    protected $lizenzkennung;
-
-    /**
-     * @Type("string")
-     * @SkipWhenEmpty
-     * @var string
-     */
-    protected $openimmoAnid = '';
+    protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
@@ -80,12 +87,6 @@ class Anbieter
      */
     protected $userDefinedExtend;
 
-    /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
-     */
-    protected $userDefinedSimplefield;
 
     /**
      * @return string

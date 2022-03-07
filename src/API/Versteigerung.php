@@ -14,10 +14,28 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Versteigerung
 {
     /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $zwangsversteigerung;
+
+    /**
      * @Type("string")
      * @var string
      */
     protected $aktenzeichen;
+
+    /**
+     * @Type("DateTime<'Y-m-d\TH:i:s', null, ['Y-m-d\TH:i:sP', 'Y-m-d\TH:i:s']>")
+     * @var \DateTime
+     */
+    protected $zvtermin;
+
+    /**
+     * @Type("DateTime<'Y-m-d\TH:i:s', null, ['Y-m-d\TH:i:sP', 'Y-m-d\TH:i:s']>")
+     * @var \DateTime
+     */
+    protected $zusatztermin;
 
     /**
      * @Type("string")
@@ -30,24 +48,6 @@ class Versteigerung
      * @var float
      */
     protected $verkehrswert;
-
-    /**
-     * @Type("DateTime<'Y-m-d\TH:i:s', null, ['Y-m-d\TH:i:sP', 'Y-m-d\TH:i:s']>")
-     * @var \DateTime
-     */
-    protected $zusatztermin;
-
-    /**
-     * @Type("DateTime<'Y-m-d\TH:i:s', null, ['Y-m-d\TH:i:sP', 'Y-m-d\TH:i:s']>")
-     * @var \DateTime
-     */
-    protected $zvtermin;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $zwangsversteigerung;
 
     /**
      * @param bool $zwangsversteigerung Shortcut setter for zwangsversteigerung

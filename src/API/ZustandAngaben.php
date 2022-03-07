@@ -14,18 +14,6 @@ use JMS\Serializer\Annotation\XmlRoot;
 class ZustandAngaben
 {
     /**
-     * @Type("Ujamii\OpenImmo\API\Alter")
-     * @var Alter
-     */
-    protected $alter;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $altlasten;
-
-    /**
      * @Type("string")
      * @var string
      */
@@ -35,20 +23,25 @@ class ZustandAngaben
      * @Type("string")
      * @var string
      */
-    protected $bauzone;
+    protected $letztemodernisierung;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Zustand")
+     * @var Zustand
+     */
+    protected $zustand;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Alter")
+     * @var Alter
+     */
+    protected $alter;
 
     /**
      * @Type("Ujamii\OpenImmo\API\BebaubarNach")
      * @var BebaubarNach
      */
     protected $bebaubarNach;
-
-    /**
-     * @XmlList(inline = true, entry = "energiepass")
-     * @Type("array<Ujamii\OpenImmo\API\Energiepass>")
-     * @var Energiepass[]
-     */
-    protected $energiepass;
 
     /**
      * @Type("Ujamii\OpenImmo\API\Erschliessung")
@@ -66,7 +59,33 @@ class ZustandAngaben
      * @Type("string")
      * @var string
      */
-    protected $letztemodernisierung;
+    protected $bauzone;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $altlasten;
+
+    /**
+     * @XmlList(inline = true, entry = "energiepass")
+     * @Type("array<Ujamii\OpenImmo\API\Energiepass>")
+     * @var Energiepass[]
+     */
+    protected $energiepass;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Verkaufstatus")
+     * @var Verkaufstatus
+     */
+    protected $verkaufstatus;
+
+    /**
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
+     */
+    protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
@@ -81,25 +100,6 @@ class ZustandAngaben
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;
-
-    /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
-     */
-    protected $userDefinedSimplefield;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Verkaufstatus")
-     * @var Verkaufstatus
-     */
-    protected $verkaufstatus;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Zustand")
-     * @var Zustand
-     */
-    protected $zustand;
 
     /**
      * @return Alter

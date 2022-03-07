@@ -17,13 +17,13 @@ class Daten
      * @Type("string")
      * @var string
      */
-    protected $anhanginhalt;
+    protected $pfad;
 
     /**
      * @Type("string")
      * @var string
      */
-    protected $pfad;
+    protected $anhanginhalt;
 
     /**
      * @param string $pfad Shortcut setter for pfad

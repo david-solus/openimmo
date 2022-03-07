@@ -14,142 +14,10 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Preise
 {
     /**
-     * @Type("float")
-     * @var float
-     */
-    protected $abstand;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\AussenCourtage")
-     * @var AussenCourtage
-     */
-    protected $aussenCourtage;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Betriebskostennetto")
-     * @var Betriebskostennetto
-     */
-    protected $betriebskostennetto;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $courtageHinweis;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $erbpacht;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $erschliessungskosten;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Evbnetto")
-     * @var Evbnetto
-     */
-    protected $evbnetto;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $freitextPreis;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $gesamtbelastungbrutto;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Gesamtbelastungnetto")
-     * @var Gesamtbelastungnetto
-     */
-    protected $gesamtbelastungnetto;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Gesamtkostenprom2von")
-     * @var Gesamtkostenprom2von
-     */
-    protected $gesamtkostenprom2von;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $gesamtmietebrutto;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Gesamtmietenetto")
-     * @var Gesamtmietenetto
-     */
-    protected $gesamtmietenetto;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $geschaeftsguthaben;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Hauptmietzinsnetto")
-     * @var Hauptmietzinsnetto
-     */
-    protected $hauptmietzinsnetto;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $hausgeld;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $heizkosten;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $heizkostenEnthalten;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Heizkostennetto")
-     * @var Heizkostennetto
-     */
-    protected $heizkostennetto;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\InnenCourtage")
-     * @var InnenCourtage
-     */
-    protected $innenCourtage;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $kaltmiete;
-
-    /**
      * @Type("Ujamii\OpenImmo\API\Kaufpreis")
      * @var Kaufpreis
      */
     protected $kaufpreis;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $kaufpreisbrutto;
 
     /**
      * @Type("Ujamii\OpenImmo\API\Kaufpreisnetto")
@@ -161,37 +29,49 @@ class Preise
      * @Type("float")
      * @var float
      */
-    protected $kaufpreisProQm;
+    protected $kaufpreisbrutto;
 
     /**
      * @Type("float")
      * @var float
      */
-    protected $kaution;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $kautionText;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\MieteinnahmenIst")
-     * @var MieteinnahmenIst
-     */
-    protected $mieteinnahmenIst;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\MieteinnahmenSoll")
-     * @var MieteinnahmenSoll
-     */
-    protected $mieteinnahmenSoll;
+    protected $nettokaltmiete;
 
     /**
      * @Type("float")
      * @var float
      */
-    protected $mietpreisProQm;
+    protected $kaltmiete;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $warmmiete;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $nebenkosten;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $heizkostenEnthalten;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $heizkosten;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $zzgMehrwertsteuer;
 
     /**
      * @Type("float")
@@ -200,10 +80,64 @@ class Preise
     protected $mietzuschlaege;
 
     /**
+     * @Type("Ujamii\OpenImmo\API\Hauptmietzinsnetto")
+     * @var Hauptmietzinsnetto
+     */
+    protected $hauptmietzinsnetto;
+
+    /**
      * @Type("float")
      * @var float
      */
-    protected $monatlichekostenbrutto;
+    protected $pauschalmiete;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Betriebskostennetto")
+     * @var Betriebskostennetto
+     */
+    protected $betriebskostennetto;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Evbnetto")
+     * @var Evbnetto
+     */
+    protected $evbnetto;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Gesamtmietenetto")
+     * @var Gesamtmietenetto
+     */
+    protected $gesamtmietenetto;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $gesamtmietebrutto;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Gesamtbelastungnetto")
+     * @var Gesamtbelastungnetto
+     */
+    protected $gesamtbelastungnetto;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $gesamtbelastungbrutto;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Gesamtkostenprom2von")
+     * @var Gesamtkostenprom2von
+     */
+    protected $gesamtkostenprom2von;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Heizkostennetto")
+     * @var Heizkostennetto
+     */
+    protected $heizkostennetto;
 
     /**
      * @Type("Ujamii\OpenImmo\API\Monatlichekostennetto")
@@ -213,123 +147,15 @@ class Preise
 
     /**
      * @Type("float")
-     * @var float Maximum precision: 2, Minimum value (inclusive): 0
-     */
-    protected $mwstGesamt;
-
-    /**
-     * @Type("float")
-     * @var float Maximum precision: 2, Minimum value (inclusive): 0
-     */
-    protected $mwstSatz;
-
-    /**
-     * @Type("float")
      * @var float
      */
-    protected $nebenkosten;
+    protected $monatlichekostenbrutto;
 
     /**
      * @Type("Ujamii\OpenImmo\API\Nebenkostenprom2von")
      * @var Nebenkostenprom2von
      */
     protected $nebenkostenprom2von;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $nettokaltmiete;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Nettomieteprom2von")
-     * @var Nettomieteprom2von
-     */
-    protected $nettomieteprom2von;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $nettorendite;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $nettorenditeIst;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $nettorenditeSoll;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $pacht;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $pauschalmiete;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\PreisZeiteinheit")
-     * @var PreisZeiteinheit
-     */
-    protected $preisZeiteinheit;
-
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     * @var \DateTime
-     */
-    protected $preisZeitraumBis;
-
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     * @var \DateTime
-     */
-    protected $preisZeitraumVon;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $provisionbrutto;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Provisionnetto")
-     * @var Provisionnetto
-     */
-    protected $provisionnetto;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $provisionspflichtig;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\ProvisionTeilen")
-     * @var ProvisionTeilen
-     */
-    protected $provisionTeilen;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $richtpreis;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $richtpreisprom2;
 
     /**
      * @Type("Ujamii\OpenImmo\API\Ruecklagenetto")
@@ -348,6 +174,198 @@ class Preise
      * @var Sonstigemietenetto
      */
     protected $sonstigemietenetto;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Summemietenetto")
+     * @var Summemietenetto
+     */
+    protected $summemietenetto;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Nettomieteprom2von")
+     * @var Nettomieteprom2von
+     */
+    protected $nettomieteprom2von;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $pacht;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $erbpacht;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $hausgeld;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $abstand;
+
+    /**
+     * @Type("DateTime<'Y-m-d'>")
+     * @var \DateTime
+     */
+    protected $preisZeitraumVon;
+
+    /**
+     * @Type("DateTime<'Y-m-d'>")
+     * @var \DateTime
+     */
+    protected $preisZeitraumBis;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\PreisZeiteinheit")
+     * @var PreisZeiteinheit
+     */
+    protected $preisZeiteinheit;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $mietpreisProQm;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $kaufpreisProQm;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $provisionspflichtig;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\ProvisionTeilen")
+     * @var ProvisionTeilen
+     */
+    protected $provisionTeilen;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\InnenCourtage")
+     * @var InnenCourtage
+     */
+    protected $innenCourtage;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\AussenCourtage")
+     * @var AussenCourtage
+     */
+    protected $aussenCourtage;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $courtageHinweis;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Provisionnetto")
+     * @var Provisionnetto
+     */
+    protected $provisionnetto;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $provisionbrutto;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Waehrung")
+     * @var Waehrung
+     */
+    protected $waehrung;
+
+    /**
+     * @Type("float")
+     * @var float Maximum precision: 2, Minimum value (inclusive): 0
+     */
+    protected $mwstSatz;
+
+    /**
+     * @Type("float")
+     * @var float Maximum precision: 2, Minimum value (inclusive): 0
+     */
+    protected $mwstGesamt;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $freitextPreis;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $xFache;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $nettorendite;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $nettorenditeSoll;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $nettorenditeIst;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\MieteinnahmenIst")
+     * @var MieteinnahmenIst
+     */
+    protected $mieteinnahmenIst;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\MieteinnahmenSoll")
+     * @var MieteinnahmenSoll
+     */
+    protected $mieteinnahmenSoll;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $erschliessungskosten;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $kaution;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $kautionText;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $geschaeftsguthaben;
 
     /**
      * @Type("Ujamii\OpenImmo\API\StpCarport")
@@ -380,6 +398,12 @@ class Preise
     protected $stpParkhaus;
 
     /**
+     * @Type("Ujamii\OpenImmo\API\StpTiefgarage")
+     * @var StpTiefgarage
+     */
+    protected $stpTiefgarage;
+
+    /**
      * @XmlList(inline = true, entry = "stp_sonstige")
      * @Type("array<Ujamii\OpenImmo\API\StpSonstige>")
      * @var StpSonstige[]
@@ -387,16 +411,23 @@ class Preise
     protected $stpSonstige;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\StpTiefgarage")
-     * @var StpTiefgarage
+     * @Type("float")
+     * @var float
      */
-    protected $stpTiefgarage;
+    protected $richtpreis;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Summemietenetto")
-     * @var Summemietenetto
+     * @Type("float")
+     * @var float
      */
-    protected $summemietenetto;
+    protected $richtpreisprom2;
+
+    /**
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
+     */
+    protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
@@ -411,37 +442,6 @@ class Preise
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;
-
-    /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
-     */
-    protected $userDefinedSimplefield;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Waehrung")
-     * @var Waehrung
-     */
-    protected $waehrung;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $warmmiete;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $xFache;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $zzgMehrwertsteuer;
 
     /**
      * @return float

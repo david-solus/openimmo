@@ -15,14 +15,6 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Moebliert
 {
     /**
-     */
-    public const MOEB_TEIL = 'TEIL';
-
-    /**
-     */
-    public const MOEB_VOLL = 'VOLL';
-
-    /**
      * optional
      *
      * @Type("string")
@@ -31,6 +23,14 @@ class Moebliert
      * @var string
      */
     protected $moeb;
+
+    /**
+     */
+    public const MOEB_VOLL = 'VOLL';
+
+    /**
+     */
+    public const MOEB_TEIL = 'TEIL';
 
     /**
      * @param string $moeb Shortcut setter for moeb

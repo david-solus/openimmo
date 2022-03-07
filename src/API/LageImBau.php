@@ -20,16 +20,6 @@ class LageImBau
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("HINTEN")
-     * @var bool
-     */
-    protected $hinten;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
      * @SerializedName("LINKS")
      * @var bool
      */
@@ -54,6 +44,16 @@ class LageImBau
      * @var bool
      */
     protected $vorne;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("HINTEN")
+     * @var bool
+     */
+    protected $hinten;
 
     /**
      * @param bool $links Shortcut setter for links

@@ -15,6 +15,16 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Unterkellert
 {
     /**
+     * optional
+     *
+     * @Type("string")
+     * @XmlAttribute
+     * @see KELLER_* constants
+     * @var string
+     */
+    protected $keller;
+
+    /**
      */
     public const KELLER_JA = 'JA';
 
@@ -25,16 +35,6 @@ class Unterkellert
     /**
      */
     public const KELLER_TEIL = 'TEIL';
-
-    /**
-     * optional
-     *
-     * @Type("string")
-     * @XmlAttribute
-     * @see KELLER_* constants
-     * @var string
-     */
-    protected $keller;
 
     /**
      * @param string $keller Shortcut setter for keller

@@ -94,6 +94,13 @@ class Anhang
     protected $anhangtitel;
 
     /**
+     * @Type("string")
+     * @SkipWhenEmpty
+     * @var string
+     */
+    protected $format = '';
+
+    /**
      * @Type("Ujamii\OpenImmo\API\Check")
      * @var Check
      */
@@ -106,11 +113,14 @@ class Anhang
     protected $daten;
 
     /**
+     * required
+     *
      * @Type("string")
-     * @SkipWhenEmpty
+     * @XmlAttribute
+     * @see LOCATION_* constants
      * @var string
      */
-    protected $format = '';
+    protected $location;
 
     /**
      * optional
@@ -122,15 +132,6 @@ class Anhang
      */
     protected $gruppe;
 
-    /**
-     * required
-     *
-     * @Type("string")
-     * @XmlAttribute
-     * @see LOCATION_* constants
-     * @var string
-     */
-    protected $location;
 
     /**
      * @param string $location Shortcut setter for location

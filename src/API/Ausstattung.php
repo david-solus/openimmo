@@ -14,47 +14,23 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Ausstattung
 {
     /**
-     */
-    public const AUSSTATT_KATEGORIE_GEHOBEN = 'GEHOBEN';
-
-    /**
-     */
-    public const AUSSTATT_KATEGORIE_LUXUS = 'LUXUS';
-
-    /**
-     */
-    public const AUSSTATT_KATEGORIE_STANDARD = 'STANDARD';
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $abstellraum;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\AngeschlGastronomie")
-     * @var AngeschlGastronomie
-     */
-    protected $angeschlGastronomie;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Ausbaustufe")
-     * @var Ausbaustufe
-     */
-    protected $ausbaustufe;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\AusrichtBalkonTerrasse")
-     * @var AusrichtBalkonTerrasse
-     */
-    protected $ausrichtBalkonTerrasse;
-
-    /**
      * @Type("string")
      * @see AUSSTATT_KATEGORIE_* constants
      * @var string
      */
     protected $ausstattKategorie;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $wgGeeignet;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $raeumeVeraenderbar;
 
     /**
      * @Type("Ujamii\OpenImmo\API\Bad")
@@ -63,28 +39,10 @@ class Ausstattung
     protected $bad;
 
     /**
-     * @Type("bool")
-     * @var bool
+     * @Type("Ujamii\OpenImmo\API\Kueche")
+     * @var Kueche
      */
-    protected $barrierefrei;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Bauweise")
-     * @var Bauweise
-     */
-    protected $bauweise;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Befeuerung")
-     * @var Befeuerung
-     */
-    protected $befeuerung;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $bibliothek;
+    protected $kueche;
 
     /**
      * @Type("Ujamii\OpenImmo\API\Boden")
@@ -96,85 +54,7 @@ class Ausstattung
      * @Type("bool")
      * @var bool
      */
-    protected $brauereibindung;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\BreitbandZugang")
-     * @var BreitbandZugang
-     */
-    protected $breitbandZugang;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $dachboden;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Dachform")
-     * @var Dachform
-     */
-    protected $dachform;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $dvbt;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $dvVerkabelung;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Energietyp")
-     * @var Energietyp
-     */
-    protected $energietyp;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $fahrradraum;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Fahrstuhl")
-     * @var Fahrstuhl
-     */
-    protected $fahrstuhl;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $gaestewc;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $gartennutzung;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $gastterrasse;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $hallenhoehe;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $hebebuehne;
+    protected $kamin;
 
     /**
      * @Type("Ujamii\OpenImmo\API\Heizungsart")
@@ -183,28 +63,10 @@ class Ausstattung
     protected $heizungsart;
 
     /**
-     * @Type("bool")
-     * @var bool
+     * @Type("Ujamii\OpenImmo\API\Befeuerung")
+     * @var Befeuerung
      */
-    protected $kabelkanaele;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $kabelSatTv;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $kamin;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $kantineCafeteria;
+    protected $befeuerung;
 
     /**
      * @Type("bool")
@@ -213,16 +75,29 @@ class Ausstattung
     protected $klimatisiert;
 
     /**
+     * @Type("Ujamii\OpenImmo\API\Fahrstuhl")
+     * @var Fahrstuhl
+     */
+    protected $fahrstuhl;
+
+    /**
+     * @XmlList(inline = true, entry = "stellplatzart")
+     * @Type("array<Ujamii\OpenImmo\API\Stellplatzart>")
+     * @var Stellplatzart[]
+     */
+    protected $stellplatzart;
+
+    /**
      * @Type("bool")
      * @var bool
      */
-    protected $kran;
+    protected $gartennutzung;
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Kueche")
-     * @var Kueche
+     * @Type("Ujamii\OpenImmo\API\AusrichtBalkonTerrasse")
+     * @var AusrichtBalkonTerrasse
      */
-    protected $kueche;
+    protected $ausrichtBalkonTerrasse;
 
     /**
      * @Type("Ujamii\OpenImmo\API\Moebliert")
@@ -234,25 +109,25 @@ class Ausstattung
      * @Type("bool")
      * @var bool
      */
-    protected $raeumeVeraenderbar;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $rampe;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $rolladen;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
     protected $rollstuhlgerecht;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $kabelSatTv;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $dvbt;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $barrierefrei;
 
     /**
      * @Type("bool")
@@ -264,33 +139,49 @@ class Ausstattung
      * @Type("bool")
      * @var bool
      */
-    protected $seniorengerecht;
-
-    /**
-     * @XmlList(inline = true, entry = "serviceleistungen")
-     * @Type("array<Ujamii\OpenImmo\API\Serviceleistungen>")
-     * @var Serviceleistungen[]
-     */
-    protected $serviceleistungen;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Sicherheitstechnik")
-     * @var Sicherheitstechnik
-     */
-    protected $sicherheitstechnik;
+    protected $swimmingpool;
 
     /**
      * @Type("bool")
      * @var bool
      */
-    protected $sporteinrichtungen;
+    protected $waschTrockenraum;
 
     /**
-     * @XmlList(inline = true, entry = "stellplatzart")
-     * @Type("array<Ujamii\OpenImmo\API\Stellplatzart>")
-     * @var Stellplatzart[]
+     * @Type("bool")
+     * @var bool
      */
-    protected $stellplatzart;
+    protected $wintergarten;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $dvVerkabelung;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $rampe;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $hebebuehne;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $kran;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $gastterrasse;
 
     /**
      * @Type("string")
@@ -302,7 +193,7 @@ class Ausstattung
      * @Type("bool")
      * @var bool
      */
-    protected $swimmingpool;
+    protected $kantineCafeteria;
 
     /**
      * @Type("bool")
@@ -311,10 +202,53 @@ class Ausstattung
     protected $teekueche;
 
     /**
+     * @Type("float")
+     * @var float
+     */
+    protected $hallenhoehe;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\AngeschlGastronomie")
+     * @var AngeschlGastronomie
+     */
+    protected $angeschlGastronomie;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $brauereibindung;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $sporteinrichtungen;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $wellnessbereich;
+
+    /**
+     * @XmlList(inline = true, entry = "serviceleistungen")
+     * @Type("array<Ujamii\OpenImmo\API\Serviceleistungen>")
+     * @var Serviceleistungen[]
+     */
+    protected $serviceleistungen;
+
+    /**
      * @Type("bool")
      * @var bool
      */
     protected $telefonFerienimmobilie;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\BreitbandZugang")
+     * @var BreitbandZugang
+     */
+    protected $breitbandZugang;
 
     /**
      * @Type("bool")
@@ -323,10 +257,95 @@ class Ausstattung
     protected $umtsEmpfang;
 
     /**
+     * @Type("Ujamii\OpenImmo\API\Sicherheitstechnik")
+     * @var Sicherheitstechnik
+     */
+    protected $sicherheitstechnik;
+
+    /**
      * @Type("Ujamii\OpenImmo\API\Unterkellert")
      * @var Unterkellert
      */
     protected $unterkellert;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $abstellraum;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $fahrradraum;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $rolladen;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Dachform")
+     * @var Dachform
+     */
+    protected $dachform;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Bauweise")
+     * @var Bauweise
+     */
+    protected $bauweise;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Ausbaustufe")
+     * @var Ausbaustufe
+     */
+    protected $ausbaustufe;
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Energietyp")
+     * @var Energietyp
+     */
+    protected $energietyp;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $bibliothek;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $dachboden;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $gaestewc;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $kabelkanaele;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $seniorengerecht;
+
+    /**
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
+     */
+    protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
@@ -343,35 +362,16 @@ class Ausstattung
     protected $userDefinedExtend;
 
     /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
      */
-    protected $userDefinedSimplefield;
+    public const AUSSTATT_KATEGORIE_GEHOBEN = 'GEHOBEN';
 
     /**
-     * @Type("bool")
-     * @var bool
      */
-    protected $waschTrockenraum;
+    public const AUSSTATT_KATEGORIE_LUXUS = 'LUXUS';
 
     /**
-     * @Type("bool")
-     * @var bool
      */
-    protected $wellnessbereich;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $wgGeeignet;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $wintergarten;
+    public const AUSSTATT_KATEGORIE_STANDARD = 'STANDARD';
 
     /**
      * @return bool

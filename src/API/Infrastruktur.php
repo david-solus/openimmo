@@ -14,6 +14,12 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Infrastruktur
 {
     /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $zulieferung;
+
+    /**
      * @Type("Ujamii\OpenImmo\API\Ausblick")
      * @var Ausblick
      */
@@ -34,6 +40,13 @@ class Infrastruktur
     protected $distanzenSport;
 
     /**
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
+     */
+    protected $userDefinedSimplefield;
+
+    /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
      * @Type("array<Ujamii\OpenImmo\API\UserDefinedAnyfield>")
      * @var UserDefinedAnyfield[]
@@ -46,19 +59,6 @@ class Infrastruktur
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;
-
-    /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
-     */
-    protected $userDefinedSimplefield;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $zulieferung;
 
     /**
      * @return Ausblick

@@ -14,66 +14,6 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Energiepass
 {
     /**
-     */
-    public const EPART_BEDARF = 'BEDARF';
-
-    /**
-     */
-    public const EPART_VERBRAUCH = 'VERBRAUCH';
-
-    /**
-     */
-    public const GEBAEUDEART_NICHTWOHN = 'nichtwohn';
-
-    /**
-     */
-    public const GEBAEUDEART_WOHN = 'wohn';
-
-    /**
-     */
-    public const JAHRGANG_2008 = '2008';
-
-    /**
-     */
-    public const JAHRGANG_2014 = '2014';
-
-    /**
-     */
-    public const JAHRGANG_BEI_BESICHTIGUNG = 'bei_besichtigung';
-
-    /**
-     */
-    public const JAHRGANG_NICHT_NOETIG = 'nicht_noetig';
-
-    /**
-     */
-    public const JAHRGANG_OHNE = 'ohne';
-
-    /**
-     * @Type("DateTime<'Y-m-d'>")
-     * @var \DateTime
-     */
-    protected $ausstelldatum;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $baujahr;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $endenergiebedarf;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $energieverbrauchkennwert;
-
-    /**
      * @Type("string")
      * @see EPART_* constants
      * @var string
@@ -81,35 +21,12 @@ class Energiepass
     protected $epart;
 
     /**
-     * @Type("string")
-     * @var string
      */
-    protected $epasstext;
+    public const EPART_BEDARF = 'BEDARF';
 
     /**
-     * @Type("string")
-     * @var string
      */
-    protected $fgeeklasse;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $fgeewert;
-
-    /**
-     * @Type("string")
-     * @see GEBAEUDEART_* constants
-     * @var string
-     */
-    protected $gebaeudeart;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $geg2018;
+    public const EPART_VERBRAUCH = 'VERBRAUCH';
 
     /**
      * @Type("string")
@@ -121,26 +38,19 @@ class Energiepass
      * @Type("string")
      * @var string
      */
-    protected $hwbklasse;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $hwbwert;
-
-    /**
-     * @Type("string")
-     * @see JAHRGANG_* constants
-     * @var string
-     */
-    protected $jahrgang;
+    protected $energieverbrauchkennwert;
 
     /**
      * @Type("bool")
      * @var bool
      */
     protected $mitwarmwasser;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $endenergiebedarf;
 
     /**
      * @Type("string")
@@ -165,6 +75,96 @@ class Energiepass
      * @var string
      */
     protected $wertklasse;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $baujahr;
+
+    /**
+     * @Type("DateTime<'Y-m-d'>")
+     * @var \DateTime
+     */
+    protected $ausstelldatum;
+
+    /**
+     * @Type("string")
+     * @see JAHRGANG_* constants
+     * @var string
+     */
+    protected $jahrgang;
+
+    /**
+     */
+    public const JAHRGANG_2008 = '2008';
+
+    /**
+     */
+    public const JAHRGANG_2014 = '2014';
+
+    /**
+     */
+    public const JAHRGANG_OHNE = 'ohne';
+
+    /**
+     */
+    public const JAHRGANG_NICHT_NOETIG = 'nicht_noetig';
+
+    /**
+     */
+    public const JAHRGANG_BEI_BESICHTIGUNG = 'bei_besichtigung';
+
+    /**
+     * @Type("string")
+     * @see GEBAEUDEART_* constants
+     * @var string
+     */
+    protected $gebaeudeart;
+
+    /**
+     */
+    public const GEBAEUDEART_WOHN = 'wohn';
+
+    /**
+     */
+    public const GEBAEUDEART_NICHTWOHN = 'nichtwohn';
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $epasstext;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $geg2018;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $hwbwert;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $hwbklasse;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $fgeewert;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $fgeeklasse;
 
     /**
      * @return \DateTime

@@ -19,13 +19,6 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Master
 {
     /**
-     * @Inline
-     * @Type("string")
-     * @var string
-     */
-    protected $value;
-
-    /**
      * required
      *
      * @Type("bool")
@@ -33,6 +26,13 @@ class Master
      * @var bool
      */
     protected $visible;
+
+    /**
+     * @Inline
+     * @Type("string")
+     * @var string
+     */
+    protected $value;
 
     /**
      * @param bool $visible Shortcut setter for visible

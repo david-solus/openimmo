@@ -30,26 +30,6 @@ class AusrichtBalkonTerrasse
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("NORDOST")
-     * @var bool
-     */
-    protected $nordost;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("NORDWEST")
-     * @var bool
-     */
-    protected $nordwest;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
      * @SerializedName("OST")
      * @var bool
      */
@@ -70,6 +50,36 @@ class AusrichtBalkonTerrasse
      *
      * @Type("bool")
      * @XmlAttribute
+     * @SerializedName("WEST")
+     * @var bool
+     */
+    protected $west;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("NORDOST")
+     * @var bool
+     */
+    protected $nordost;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("NORDWEST")
+     * @var bool
+     */
+    protected $nordwest;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
      * @SerializedName("SUEDOST")
      * @var bool
      */
@@ -84,16 +94,6 @@ class AusrichtBalkonTerrasse
      * @var bool
      */
     protected $suedwest;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("WEST")
-     * @var bool
-     */
-    protected $west;
 
     /**
      * @return bool

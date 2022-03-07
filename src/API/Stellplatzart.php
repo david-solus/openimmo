@@ -20,20 +20,30 @@ class Stellplatzart
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("CARPORT")
+     * @SerializedName("GARAGE")
      * @var bool
      */
-    protected $carport;
+    protected $garage;
 
     /**
      * optional
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("DUPLEX")
+     * @SerializedName("TIEFGARAGE")
      * @var bool
      */
-    protected $duplex;
+    protected $tiefgarage;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("CARPORT")
+     * @var bool
+     */
+    protected $carport;
 
     /**
      * optional
@@ -50,16 +60,6 @@ class Stellplatzart
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("GARAGE")
-     * @var bool
-     */
-    protected $garage;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
      * @SerializedName("PARKHAUS")
      * @var bool
      */
@@ -70,10 +70,10 @@ class Stellplatzart
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("TIEFGARAGE")
+     * @SerializedName("DUPLEX")
      * @var bool
      */
-    protected $tiefgarage;
+    protected $duplex;
 
     /**
      * @param bool $garage Shortcut setter for garage

@@ -17,6 +17,12 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Openimmo
 {
     /**
+     * @Type("Ujamii\OpenImmo\API\Uebertragung")
+     * @var Uebertragung
+     */
+    protected $uebertragung;
+    
+    /**
      * @XmlList(inline = true, entry = "anbieter")
      * @Type("array<Ujamii\OpenImmo\API\Anbieter>")
      * @SkipWhenEmpty
@@ -25,10 +31,11 @@ class Openimmo
     protected $anbieter = [];
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Uebertragung")
-     * @var Uebertragung
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
      */
-    protected $uebertragung;
+    protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
@@ -36,13 +43,6 @@ class Openimmo
      * @var UserDefinedAnyfield[]
      */
     protected $userDefinedAnyfield;
-
-    /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
-     */
-    protected $userDefinedSimplefield;
 
     /**
      * @param Uebertragung $uebertragung Shortcut setter for uebertragung

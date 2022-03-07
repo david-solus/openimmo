@@ -15,39 +15,6 @@ use JMS\Serializer\Annotation\XmlRoot;
 class TelSonstige
 {
     /**
-     */
-    public const TELEFONART_TEL_DURCHW = 'TEL_DURCHW';
-
-    /**
-     */
-    public const TELEFONART_TEL_FAX = 'TEL_FAX';
-
-    /**
-     */
-    public const TELEFONART_TEL_HANDY = 'TEL_HANDY';
-
-    /**
-     */
-    public const TELEFONART_TEL_PRIVAT = 'TEL_PRIVAT';
-
-    /**
-     */
-    public const TELEFONART_TEL_SONSTIGE = 'TEL_SONSTIGE';
-
-    /**
-     */
-    public const TELEFONART_TEL_ZENTRALE = 'TEL_ZENTRALE';
-
-    /**
-     * optional
-     *
-     * @Type("string")
-     * @XmlAttribute
-     * @var string
-     */
-    protected $bemerkung;
-
-    /**
      * optional
      *
      * @Type("string")
@@ -63,6 +30,39 @@ class TelSonstige
      * @var string
      */
     protected $value;
+
+    /**
+     */
+    public const TELEFONART_TEL_ZENTRALE = 'TEL_ZENTRALE';
+
+    /**
+     */
+    public const TELEFONART_TEL_DURCHW = 'TEL_DURCHW';
+
+    /**
+     */
+    public const TELEFONART_TEL_PRIVAT = 'TEL_PRIVAT';
+
+    /**
+     */
+    public const TELEFONART_TEL_HANDY = 'TEL_HANDY';
+
+    /**
+     */
+    public const TELEFONART_TEL_FAX = 'TEL_FAX';
+
+    /**
+     */
+    public const TELEFONART_TEL_SONSTIGE = 'TEL_SONSTIGE';
+
+    /**
+     * optional
+     *
+     * @Type("string")
+     * @XmlAttribute
+     * @var string
+     */
+    protected $bemerkung;
 
     /**
      * @param string $telefonart Shortcut setter for telefonart

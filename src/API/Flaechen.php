@@ -17,217 +17,19 @@ class Flaechen
      * @Type("float")
      * @var float
      */
-    protected $anzahlBadezimmer;
+    protected $wohnflaeche;
 
     /**
      * @Type("float")
      * @var float
      */
-    protected $anzahlBalkone;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $anzahlBetten;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $anzahlGewerbeeinheiten;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $anzahlLogia;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $anzahlSchlafzimmer;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $anzahlSepWc;
-
-    /**
-     * @Type("int")
-     * @var int Minimum value (inclusive): 1
-     */
-    protected $anzahlStellplaetze;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $anzahlTagungsraeume;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $anzahlTerrassen;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $anzahlWohneinheiten;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $anzahlWohnSchlafzimmer;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $anzahlZimmer;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $ausnuetzungsziffer;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $balkonTerrasseFlaeche;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $beheizbareFlaeche;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $bgf;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $bmz;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $bueroflaeche;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $bueroteilflaeche;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $dachbodenflaeche;
-
-    /**
-     * @Type("bool")
-     * @var bool
-     */
-    protected $einliegerwohnung;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $fensterfront;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $fensterfrontQm;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $flaechebis;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $flaechevon;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $freiflaeche;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $gartenflaeche;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $gastroflaeche;
+    protected $nutzflaeche;
 
     /**
      * @Type("float")
      * @var float
      */
     protected $gesamtflaeche;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $gfz;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $grundstuecksflaeche;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $grundstuecksfront;
-
-    /**
-     * @Type("string")
-     * @var string
-     */
-    protected $grz;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $kellerflaeche;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $kubatur;
 
     /**
      * @Type("float")
@@ -245,13 +47,73 @@ class Flaechen
      * @Type("float")
      * @var float
      */
-    protected $nutzflaeche;
+    protected $verkaufsflaeche;
 
     /**
      * @Type("float")
      * @var float
      */
-    protected $plaetzeGastraum;
+    protected $freiflaeche;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $bueroflaeche;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $bueroteilflaeche;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $fensterfront;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $verwaltungsflaeche;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $gastroflaeche;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $grz;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $gfz;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $bmz;
+
+    /**
+     * @Type("string")
+     * @var string
+     */
+    protected $bgf;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $grundstuecksflaeche;
 
     /**
      * @Type("float")
@@ -263,7 +125,176 @@ class Flaechen
      * @Type("float")
      * @var float
      */
+    protected $anzahlZimmer;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $anzahlSchlafzimmer;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $anzahlBadezimmer;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $anzahlSepWc;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $anzahlBalkone;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $anzahlTerrassen;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $anzahlLogia;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $balkonTerrasseFlaeche;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $anzahlWohnSchlafzimmer;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $gartenflaeche;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $kellerflaeche;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $fensterfrontQm;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $grundstuecksfront;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $dachbodenflaeche;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
     protected $teilbarAb;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $beheizbareFlaeche;
+
+    /**
+     * @Type("int")
+     * @var int Minimum value (inclusive): 1
+     */
+    protected $anzahlStellplaetze;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $plaetzeGastraum;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $anzahlBetten;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $anzahlTagungsraeume;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $vermietbareFlaeche;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $anzahlWohneinheiten;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $anzahlGewerbeeinheiten;
+
+    /**
+     * @Type("bool")
+     * @var bool
+     */
+    protected $einliegerwohnung;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $kubatur;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $ausnuetzungsziffer;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $flaechevon;
+
+    /**
+     * @Type("float")
+     * @var float
+     */
+    protected $flaechebis;
+
+    /**
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
+     */
+    protected $userDefinedSimplefield;
 
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
@@ -278,37 +309,6 @@ class Flaechen
      * @var UserDefinedExtend[]
      */
     protected $userDefinedExtend;
-
-    /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
-     */
-    protected $userDefinedSimplefield;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $verkaufsflaeche;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $vermietbareFlaeche;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $verwaltungsflaeche;
-
-    /**
-     * @Type("float")
-     * @var float
-     */
-    protected $wohnflaeche;
 
     /**
      * @return float

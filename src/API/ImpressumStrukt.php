@@ -19,7 +19,7 @@ class ImpressumStrukt
      * @SkipWhenEmpty
      * @var string
      */
-    protected $berufsaufsichtsbehoerde = '';
+    protected $firmenname = '';
 
     /**
      * @Type("string")
@@ -33,7 +33,21 @@ class ImpressumStrukt
      * @SkipWhenEmpty
      * @var string
      */
-    protected $firmenname = '';
+    protected $telefon = '';
+
+    /**
+     * @Type("string")
+     * @SkipWhenEmpty
+     * @var string
+     */
+    protected $vertretungsberechtigter = '';
+
+    /**
+     * @Type("string")
+     * @SkipWhenEmpty
+     * @var string
+     */
+    protected $berufsaufsichtsbehoerde = '';
 
     /**
      * @Type("string")
@@ -54,20 +68,6 @@ class ImpressumStrukt
      * @SkipWhenEmpty
      * @var string
      */
-    protected $steuernummer = '';
-
-    /**
-     * @Type("string")
-     * @SkipWhenEmpty
-     * @var string
-     */
-    protected $telefon = '';
-
-    /**
-     * @Type("string")
-     * @SkipWhenEmpty
-     * @var string
-     */
     protected $umsstId = '';
 
     /**
@@ -75,7 +75,7 @@ class ImpressumStrukt
      * @SkipWhenEmpty
      * @var string
      */
-    protected $vertretungsberechtigter = '';
+    protected $steuernummer = '';
 
     /**
      * @Type("string")

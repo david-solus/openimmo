@@ -15,31 +15,6 @@ use JMS\Serializer\Annotation\XmlRoot;
 class EmailSonstige
 {
     /**
-     */
-    public const EMAILART_EM_DIREKT = 'EM_DIREKT';
-
-    /**
-     */
-    public const EMAILART_EM_PRIVAT = 'EM_PRIVAT';
-
-    /**
-     */
-    public const EMAILART_EM_SONSTIGE = 'EM_SONSTIGE';
-
-    /**
-     */
-    public const EMAILART_EM_ZENTRALE = 'EM_ZENTRALE';
-
-    /**
-     * optional
-     *
-     * @Type("string")
-     * @XmlAttribute
-     * @var string
-     */
-    protected $bemerkung;
-
-    /**
      * optional
      *
      * @Type("string")
@@ -55,6 +30,31 @@ class EmailSonstige
      * @var string
      */
     protected $value;
+
+    /**
+     */
+    public const EMAILART_EM_ZENTRALE = 'EM_ZENTRALE';
+
+    /**
+     */
+    public const EMAILART_EM_DIREKT = 'EM_DIREKT';
+
+    /**
+     */
+    public const EMAILART_EM_PRIVAT = 'EM_PRIVAT';
+
+    /**
+     */
+    public const EMAILART_EM_SONSTIGE = 'EM_SONSTIGE';
+
+    /**
+     * optional
+     *
+     * @Type("string")
+     * @XmlAttribute
+     * @var string
+     */
+    protected $bemerkung;
 
     /**
      * @param string $emailart Shortcut setter for emailart

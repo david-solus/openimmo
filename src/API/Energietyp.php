@@ -19,6 +19,36 @@ class Energietyp
      *
      * @Type("bool")
      * @XmlAttribute
+     * @SerializedName("PASSIVHAUS")
+     * @var bool
+     */
+    protected $passivhaus;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("NIEDRIGENERGIE")
+     * @var bool
+     */
+    protected $niedrigenergie;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("NEUBAUSTANDARD")
+     * @var bool
+     */
+    protected $neubaustandard;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
      * @SerializedName("KFW40")
      * @var bool
      */
@@ -29,20 +59,20 @@ class Energietyp
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("KFW55")
+     * @SerializedName("KFW60")
      * @var bool
      */
-    protected $kfw55;
+    protected $kfw60;
 
     /**
      * optional
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("KFW60")
+     * @SerializedName("KFW55")
      * @var bool
      */
-    protected $kfw60;
+    protected $kfw55;
 
     /**
      * optional
@@ -73,36 +103,6 @@ class Energietyp
      * @var bool
      */
     protected $minergieZertifiziert;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("NEUBAUSTANDARD")
-     * @var bool
-     */
-    protected $neubaustandard;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("NIEDRIGENERGIE")
-     * @var bool
-     */
-    protected $niedrigenergie;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("PASSIVHAUS")
-     * @var bool
-     */
-    protected $passivhaus;
 
     /**
      * @return bool

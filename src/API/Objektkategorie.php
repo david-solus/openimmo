@@ -20,11 +20,24 @@ class Objektkategorie
     protected $nutzungsart;
 
     /**
+     * @Type("Ujamii\OpenImmo\API\Vermarktungsart")
+     * @var Vermarktungsart
+     */
+    protected $vermarktungsart;
+
+    /**
      * @Type("Ujamii\OpenImmo\API\Objektart")
      * @var Objektart
      */
     protected $objektart;
 
+    /**
+     * @XmlList(inline = true, entry = "user_defined_simplefield")
+     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
+     * @var UserDefinedSimplefield[]
+     */
+    protected $userDefinedSimplefield;
+    
     /**
      * @XmlList(inline = true, entry = "user_defined_anyfield")
      * @Type("array<Ujamii\OpenImmo\API\UserDefinedAnyfield>")
@@ -39,18 +52,6 @@ class Objektkategorie
      */
     protected $userDefinedExtend;
 
-    /**
-     * @XmlList(inline = true, entry = "user_defined_simplefield")
-     * @Type("array<Ujamii\OpenImmo\API\UserDefinedSimplefield>")
-     * @var UserDefinedSimplefield[]
-     */
-    protected $userDefinedSimplefield;
-
-    /**
-     * @Type("Ujamii\OpenImmo\API\Vermarktungsart")
-     * @var Vermarktungsart
-     */
-    protected $vermarktungsart;
 
     /**
      * @param Nutzungsart $nutzungsart Shortcut setter for nutzungsart

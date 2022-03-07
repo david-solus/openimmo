@@ -19,16 +19,6 @@ class Ausbaustufe
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("AUSBAUHAUS")
-     * @var bool
-     */
-    protected $ausbauhaus;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
      * @SerializedName("BAUSATZHAUS")
      * @var bool
      */
@@ -39,10 +29,10 @@ class Ausbaustufe
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("SCHLUESSELFERTIGMITBODENPLATTE")
+     * @SerializedName("AUSBAUHAUS")
      * @var bool
      */
-    protected $schluesselfertigmitbodenplatte;
+    protected $ausbauhaus;
 
     /**
      * optional
@@ -63,6 +53,16 @@ class Ausbaustufe
      * @var bool
      */
     protected $schluesselfertigohnebodenplatte;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
+     * @SerializedName("SCHLUESSELFERTIGMITBODENPLATTE")
+     * @var bool
+     */
+    protected $schluesselfertigmitbodenplatte;
 
     /**
      * @param bool $bausatzhaus Shortcut setter for bausatzhaus

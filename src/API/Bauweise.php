@@ -19,6 +19,16 @@ class Bauweise
      *
      * @Type("bool")
      * @XmlAttribute
+     * @SerializedName("MASSIV")
+     * @var bool
+     */
+    protected $massiv;
+
+    /**
+     * optional
+     *
+     * @Type("bool")
+     * @XmlAttribute
      * @SerializedName("FERTIGTEILE")
      * @var bool
      */
@@ -33,16 +43,6 @@ class Bauweise
      * @var bool
      */
     protected $holz;
-
-    /**
-     * optional
-     *
-     * @Type("bool")
-     * @XmlAttribute
-     * @SerializedName("MASSIV")
-     * @var bool
-     */
-    protected $massiv;
 
     /**
      * @param bool $massiv Shortcut setter for massiv

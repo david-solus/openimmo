@@ -25,17 +25,17 @@ class Foto
     public const LOCATION_REMOTE = 'REMOTE';
 
     /**
-     * @Type("Ujamii\OpenImmo\API\Daten")
-     * @var Daten
-     */
-    protected $daten;
-
-    /**
      * @Type("string")
      * @SkipWhenEmpty
      * @var string
      */
     protected $format = '';
+
+    /**
+     * @Type("Ujamii\OpenImmo\API\Daten")
+     * @var Daten
+     */
+    protected $daten;
 
     /**
      * required

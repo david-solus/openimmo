@@ -16,22 +16,6 @@ use JMS\Serializer\Annotation\XmlRoot;
 class MieteinnahmenSoll
 {
     /**
-     */
-    public const PERIODE_JAHR = 'JAHR';
-
-    /**
-     */
-    public const PERIODE_MONAT = 'MONAT';
-
-    /**
-     */
-    public const PERIODE_TAG = 'TAG';
-
-    /**
-     */
-    public const PERIODE_WOCHE = 'WOCHE';
-
-    /**
      * optional
      *
      * @Type("string")
@@ -47,6 +31,22 @@ class MieteinnahmenSoll
      * @var float
      */
     protected $value;
+
+    /**
+     */
+    public const PERIODE_TAG = 'TAG';
+
+    /**
+     */
+    public const PERIODE_WOCHE = 'WOCHE';
+
+    /**
+     */
+    public const PERIODE_MONAT = 'MONAT';
+
+    /**
+     */
+    public const PERIODE_JAHR = 'JAHR';
 
     /**
      * @param string $periode Shortcut setter for periode

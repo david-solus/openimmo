@@ -20,20 +20,20 @@ class Fahrstuhl
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("LASTEN")
+     * @SerializedName("PERSONEN")
      * @var bool
      */
-    protected $lasten;
+    protected $personen;
 
     /**
      * optional
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("PERSONEN")
+     * @SerializedName("LASTEN")
      * @var bool
      */
-    protected $personen;
+    protected $lasten;
 
     /**
      * @param bool $personen Shortcut setter for personen

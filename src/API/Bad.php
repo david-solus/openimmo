@@ -20,20 +20,20 @@ class Bad
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("BIDET")
+     * @SerializedName("DUSCHE")
      * @var bool
      */
-    protected $bidet;
+    protected $dusche;
 
     /**
      * optional
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("DUSCHE")
+     * @SerializedName("WANNE")
      * @var bool
      */
-    protected $dusche;
+    protected $wanne;
 
     /**
      * optional
@@ -50,20 +50,20 @@ class Bad
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("PISSOIR")
+     * @SerializedName("BIDET")
      * @var bool
      */
-    protected $pissoir;
+    protected $bidet;
 
     /**
      * optional
      *
      * @Type("bool")
      * @XmlAttribute
-     * @SerializedName("WANNE")
+     * @SerializedName("PISSOIR")
      * @var bool
      */
-    protected $wanne;
+    protected $pissoir;
 
     /**
      * @param bool $dusche Shortcut setter for dusche
