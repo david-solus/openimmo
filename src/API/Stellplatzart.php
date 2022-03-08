@@ -5,6 +5,7 @@ namespace REO\OpenImmo\API;
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlAttribute;
+use JMS\Serializer\Annotation\XmlValue;
 use JMS\Serializer\Annotation\XmlRoot;
 
 /**
@@ -75,6 +76,16 @@ class Stellplatzart
      */
     protected $duplex;
 
+    /**
+     * This value is needed because a class with only xml attributes
+     * will result in using any next value as an xml value of this tag
+     *
+     * @Type("string")
+     * @XmlValue
+     * @var string
+     */
+    private $xmlEmptySpace = " ";
+    
     /**
      * @param bool $garage Shortcut setter for garage
      * @param bool $tiefgarage Shortcut setter for tiefgarage

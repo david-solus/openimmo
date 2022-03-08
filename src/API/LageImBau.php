@@ -6,6 +6,7 @@ use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlAttribute;
 use JMS\Serializer\Annotation\XmlRoot;
+use JMS\Serializer\Annotation\XmlValue;
 
 /**
  * Class LageImBau
@@ -55,6 +56,16 @@ class LageImBau
      */
     protected $hinten;
 
+    /**
+     * This value is needed because a class with only xml attributes
+     * will result in using any next value as an xml value of this tag
+     *
+     * @Type("string")
+     * @XmlValue
+     * @var string
+     */
+    private $xmlEmptySpace = " ";
+    
     /**
      * @param bool $links Shortcut setter for links
      * @param bool $rechts Shortcut setter for rechts

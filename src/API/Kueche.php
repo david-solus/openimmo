@@ -46,6 +46,16 @@ class Kueche
     protected $pantry;
 
     /**
+     * This value is needed because a class with only xml attributes
+     * will result in using any next value as an xml value of this tag
+     *
+     * @Type("string")
+     * @XmlValue
+     * @var string
+     */
+    private $xmlEmptySpace = " ";
+    
+    /**
      * @param bool $ebk Shortcut setter for ebk
      * @param bool $offen Shortcut setter for offen
      * @param bool $pantry Shortcut setter for pantry
