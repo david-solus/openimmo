@@ -5,6 +5,8 @@ namespace REO\OpenImmo\API;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlList;
 use JMS\Serializer\Annotation\XmlRoot;
+use JMS\Serializer\Annotation\XmlAttribute;
+use JMS\Serializer\Annotation\XmlValue;
 
 /**
  * Class Flaechen
@@ -319,7 +321,7 @@ class Flaechen
      * @var string
      */
     private $xmlEmptySpace = " ";
-    
+
     /**
      * @return float
      */
