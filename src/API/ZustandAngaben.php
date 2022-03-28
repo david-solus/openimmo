@@ -56,6 +56,12 @@ class ZustandAngaben
     protected $erschliessungUmfang;
 
     /**
+     * @Type("REO\OpenImmo\API\ErschliessungUmfangMulti")
+     * @var ErschliessungUmfangMulti
+     */
+    protected $erschliessungUmfangMulti;
+
+    /**
      * @Type("string")
      * @var string
      */
