@@ -364,16 +364,6 @@ class Ausstattung
     protected $userDefinedExtend;
 
     /**
-     * This value is needed because a class with only xml attributes
-     * will result in using any next value as an xml value of this tag
-     *
-     * @Type("string")
-     * @XmlValue
-     * @var string
-     */
-    private $xmlEmptySpace = " ";
-
-    /**
      */
     public const AUSSTATT_KATEGORIE_GEHOBEN = 'GEHOBEN';
 
