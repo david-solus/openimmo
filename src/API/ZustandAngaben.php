@@ -174,6 +174,14 @@ class ZustandAngaben
     }
 
     /**
+     * @return ErschliessungUmfangMulti
+     */
+    public function getErschliessungUmfangMulti(): ?ErschliessungUmfangMulti
+    {
+        return $this->erschliessungUmfangMulti;
+    }
+
+    /**
      * @return string
      */
     public function getLetztemodernisierung(): ?string
@@ -304,6 +312,16 @@ class ZustandAngaben
     public function setErschliessungUmfang(?ErschliessungUmfang $erschliessungUmfang)
     {
         $this->erschliessungUmfang = $erschliessungUmfang;
+        return $this;
+    }
+
+    /**
+     * @param ErschliessungUmfangMulti $erschliessungUmfangMulti Setter for erschliessungUmfangMulti
+     * @return ZustandAngaben
+     */
+    public function setErschliessungUmfangMulti(?ErschliessungUmfangMulti $erschliessungUmfangMulti)
+    {
+        $this->erschliessungUmfangMulti = $erschliessungUmfangMulti;
         return $this;
     }
 
