@@ -51,17 +51,11 @@ class ZustandAngaben
     protected $erschliessung;
 
     /**
-     * @Type("REO\OpenImmo\API\ErschliessungUmfang")
-     * @var ErschliessungUmfang
+     * @XmlList(inline = true, entry = "energiepass")
+     * @Type("array<REO\OpenImmo\API\ErschliessungUmfang>")
+     * @var ErschliessungUmfang[]
      */
     protected $erschliessungUmfang;
-
-    /**
-     * @Type("REO\OpenImmo\API\ErschliessungUmfangMulti")
-     * @SerializedName("erschliessung_umfang")
-     * @var ErschliessungUmfangMulti
-     */
-    protected $erschliessungUmfangMulti;
 
     /**
      * @Type("string")
@@ -175,13 +169,6 @@ class ZustandAngaben
         return $this->erschliessungUmfang;
     }
 
-    /**
-     * @return ErschliessungUmfangMulti
-     */
-    public function getErschliessungUmfangMulti(): ?ErschliessungUmfangMulti
-    {
-        return $this->erschliessungUmfangMulti;
-    }
 
     /**
      * @return string
