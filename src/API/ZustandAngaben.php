@@ -51,7 +51,7 @@ class ZustandAngaben
     protected $erschliessung;
 
     /**
-     * @XmlList(inline = true, entry = "energiepass")
+     * @XmlList(inline = true, entry = "erschliessung_umfang")
      * @Type("array<REO\OpenImmo\API\ErschliessungUmfang>")
      * @var ErschliessungUmfang[]
      */
